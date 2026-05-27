@@ -1,0 +1,59 @@
+symbol,company_name,sector,subsector,segment
+PETR4,PETROBRAS,Oil Gas and Biofuels,Oil Gas and Biofuels,Exploration Refining and Distribution
+VALE3,VALE,Basic Materials,Mining,Minerals
+BBDC4,BRADESCO,Financials,Banks,Banks
+BBAS3,BANCO DO BRASIL,Financials,Banks,Banks
+PETR3,PETROBRAS,Oil Gas and Biofuels,Oil Gas and Biofuels,Exploration Refining and Distribution
+RENT3,LOCALIZA,Industrials,Transportation,Rent a Car
+LREN3,LOJAS RENNER,Consumer Cyclical,Retail,Apparel
+GGBR4,GERDAU,Basic Materials,Steel and Metallurgy,Steel
+ITSA4,ITAUSA,Financials,Financial Services,Holdings
+USIM5,USIMINAS,Basic Materials,Steel and Metallurgy,Steel
+CSNA3,CSN,Basic Materials,Steel and Metallurgy,Steel
+ELET3,ELETROBRAS,Utilities,Electric Utility,Generation and Transmission
+CYRE3,CYRELA,Real Estate,Real Estate,Construction
+SBSP3,SABESP,Utilities,Water and Sanitation,Water and Sanitation
+CCRO3,CCR,Industrials,Transportation,Infrastructure
+CMIG4,CEMIG,Utilities,Electric Utility,Generation and Distribution
+EMBR3,EMBRAER,Industrials,Aerospace and Defense,Aerospace
+BRAP4,BRADESPAR,Basic Materials,Mining,Holdings
+BRKM5,BRASKEM,Basic Materials,Chemicals,Petrochemicals
+GOAU4,METALURGICA GERDAU,Basic Materials,Steel and Metallurgy,Holdings
+BBDC3,BRADESCO,Financials,Banks,Banks
+ELET6,ELETROBRAS,Utilities,Electric Utility,Generation and Transmission
+CPLE6,COPEL,Utilities,Electric Utility,Generation and Distribution
+CPFE3,CPFL ENERGIA,Utilities,Electric Utility,Generation and Distribution
+PSSA3,PORTO SEGURO,Financials,Insurance,Insurance
+TRPL4,ISA CTEEP,Utilities,Electric Utility,Transmission
+ALPA4,ALPARGATAS,Consumer Cyclical,Apparel and Footwear,Footwear
+POMO4,MARCOPOLO,Industrials,Transportation Equipment,Commercial Vehicles
+RAPT4,RANDON,Industrials,Transportation Equipment,Auto Parts
+CPLE3,COPEL,Utilities,Electric Utility,Generation and Distribution
+TELB4,TELEBRAS,Telecommunications,Telecommunications,Telecommunications
+KLBN4,KLABIN,Basic Materials,Paper and Cellulose,Paper and Cellulose
+GRND3,GRENDENE,Consumer Cyclical,Apparel and Footwear,Footwear
+USIM3,USIMINAS,Basic Materials,Steel and Metallurgy,Steel
+GUAR3,GUARARAPES,Consumer Cyclical,Retail,Apparel
+SAPR4,SANEPAR,Utilities,Water and Sanitation,Water and Sanitation
+UNIP6,UNIPAR,Basic Materials,Chemicals,Chemicals
+KEPL3,KEPLER WEBER,Industrials,Machinery and Equipment,Agricultural
+CMIG3,CEMIG,Utilities,Electric Utility,Generation and Distribution
+FESA4,FERBASA,Basic Materials,Steel and Metallurgy,Metallurgy
+ROMI3,INDS ROMI,Industrials,Machinery and Equipment,Industrial Machinery
+ITSA3,ITAUSA,Financials,Financial Services,Holdings
+GGBR3,GERDAU,Basic Materials,Steel and Metallurgy,Steel
+CGAS5,COMGAS,Utilities,Gas Utility,Distribution
+COCE5,COELCE,Utilities,Electric Utility,Distribution
+SHUL4,SCHULZ,Industrials,Machinery and Equipment,Industrial Machinery
+BRAP3,BRADESPAR,Basic Materials,Mining,Holdings
+ETER3,ETERNIT,Industrials,Construction Materials,Construction Materials
+SCAR3,SAO CARLOS,Real Estate,Real Estate,Commercial Properties
+TELB3,TELEBRAS,Telecommunications,Telecommunications,Telecommunications
+CTNM4,COTEMINAS,Consumer Cyclical,Textiles,Textiles
+GOAU3,METALURGICA GERDAU,Basic Materials,Steel and Metallurgy,Holdings
+BEES3,BANESTES,Financials,Banks,Banks
+BOBR4,BOMBRIL,Consumer Non-Cyclical,Personal and Home Care,Home Care
+BRKM3,BRASKEM,Basic Materials,Chemicals,Petrochemicals
+BAZA3,BANCO DA AMAZONIA,Financials,Banks,Banks
+EMAE4,EMAE,Utilities,Electric Utility,Generation
+MGEL4,MANGELS,Basic Materials,Steel and Metallurgy,Metallurgy

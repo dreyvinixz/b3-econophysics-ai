@@ -115,16 +115,23 @@
 - [x] Visually inspect Figure 1 PNG
 - [x] Visually inspect Figure 1D clean PNG
 - [x] Commit and push Figure 1 artifacts
+- [x] Generate Table 1 with descriptive statistics for demo_assets
 
 ---
 
 ## Phase 6 — Correlation structure
 
-- [ ] Compute Pearson correlation matrix
+- [x] Compute Pearson correlation matrix
+- [x] Export pairwise observation-count matrix
+- [x] Generate correlation histogram
+- [x] Create initial macro-sector classification
+- [x] Preserve `Utilities` and `Real Estate` as separate sectors
+- [x] Preserve `subsector` metadata for Basic Materials and other sectors
 - [ ] Compute Spearman correlation matrix
-- [ ] Compute within-sector correlations
-- [ ] Compute between-sector correlations
-- [ ] Generate correlation histogram
+- [x] Compute within-sector correlations
+- [x] Compute between-sector correlations
+- [x] Run Mann-Whitney U test for within-sector vs between-sector correlations
+- [x] Generate Figure 3 sector correlation distribution
 - [ ] Compute rolling correlations
 - [ ] Compute EWMA correlations
 
