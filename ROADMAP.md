@@ -13,43 +13,45 @@
 ## Phase 0 — Project setup
 
 - [x] Create project structure
-- [ ] Create README.md
-- [ ] Fill requirements.txt
-- [ ] Fill config/clickhouse.toml
-- [ ] Configure Python import path
-- [ ] Test local execution from project root
-- [ ] Initialize Git repository
-- [ ] Create .gitignore
+- [x] Create README.md
+- [x] Fill requirements.txt
+- [x] Fill config/clickhouse.toml
+- [x] Configure Python import path
+- [x] Test local execution from project root
+- [x] Initialize Git repository
+- [x] Create .gitignore
+- [x] Connect repository to GitHub `dreyvinixz/b3-econophysics-ai`
 
 ---
 
 ## Phase 1 — ClickHouse connection
 
-- [ ] Start QuantBase backend Docker stack
-- [ ] Confirm ClickHouse container is running
-- [ ] Confirm port 8123 is exposed
-- [ ] Test `curl http://localhost:8123/ping`
-- [ ] Implement `src/db.py`
-- [ ] Implement `scripts/python/00_check_clickhouse.py`
-- [ ] Run `SELECT 1`
-- [ ] Run table summary for `quantbase.candles_1d`
+- [x] Start QuantBase backend Docker stack
+- [x] Confirm ClickHouse container is running
+- [x] Confirm port 8123 is exposed
+- [x] Test ClickHouse connection through Python client
+- [x] Implement `src/db.py`
+- [x] Implement `scripts/python/00_check_clickhouse.py`
+- [x] Run `SELECT 1`
+- [x] Run table summary for `quantbase.candles_1d`
 
 ---
 
 ## Phase 2 — Data audit
 
-- [ ] Describe `quantbase.candles_1d`
-- [ ] Confirm available columns
-- [ ] Confirm first and last date
-- [ ] Count total rows
-- [ ] Count unique symbols
-- [ ] Check duplicated rows by `symbol, date`
-- [ ] Check null values in `adj_close`
-- [ ] Check null values in `financial_volume`
-- [ ] Check invalid prices
-- [ ] Check invalid volume
-- [ ] Inspect `factor_status`
-- [ ] Confirm that `adj_close` is the correct price column for returns
+- [x] Describe `quantbase.candles_1d`
+- [x] Confirm available columns
+- [x] Confirm first and last date
+- [x] Count total rows
+- [x] Count unique symbols
+- [x] Check duplicated rows by `symbol, date`
+- [x] Check null values in `adj_close`
+- [x] Check null values in `financial_volume`
+- [x] Check invalid prices
+- [x] Check invalid volume
+- [~] Inspect `factor_status`
+- [x] Confirm that `adj_close` is the correct price column for returns
+- [x] Validate generated return table dimensions
 
 ---
 
@@ -63,6 +65,8 @@
 - [x] Fill `config/assets_universe.yaml`
 - [x] Implement `scripts/python/01_list_liquid_assets.py`
 - [x] Export universe tables to `outputs/tables`
+- [x] Define `demo_assets`: PETR4, VALE3, BBDC4
+- [x] Define `modern_liquid_top_50`
 
 ---
 
@@ -74,7 +78,9 @@
 - [x] Create wide returns matrix
 - [x] Generate summary statistics by asset
 - [x] Validate extreme returns
+- [x] Approve `demo_assets` for first stylized-facts figure
 - [!] Investigate extreme adjusted-return events in modern universe
+- [!] Avoid full-period complete-case dropna for `modern_liquid_top_50`
 
 ---
 
@@ -85,7 +91,9 @@
 - [ ] Inspect `abs(log_return) > 1.00`
 - [ ] Investigate KLBN11 December 2013 adjustment sequence
 - [ ] Decide treatment for extreme corporate-action-like returns
-- [ ] Define modern analysis window, likely 2018-2025
+- [~] Define modern analysis window, likely 2018-2025
+- [ ] Export `extreme_returns_modern_top_50.csv`
+- [ ] Export `critical_returns_modern_top_50.csv`
 
 ---
 
@@ -98,6 +106,8 @@
 - [x] Export Figure 1 as PDF
 - [x] Export Figure 1 as SVG
 - [x] Export Figure 1 preview as PNG
+- [x] Visually inspect Figure 1 PNG
+- [x] Commit and push Figure 1 artifacts
 
 ---
 
