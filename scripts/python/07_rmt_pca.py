@@ -200,43 +200,124 @@ def main() -> None:
     plt.savefig(png_path_6, dpi=300, bbox_inches="tight")
     plt.close()
     
-    # --- Plot Figure 7 (Top Eigenvectors) ---
-    fig, axes = plt.subplots(n_above_lambda_max, 1, figsize=(10, 2.5 * n_above_lambda_max), sharex=True)
-    if n_above_lambda_max == 1:
-        axes = [axes]
+    # Top 8 assets table
+    top_8_records = []
+    for rank in range(1, n_above_lambda_max + 1):
+        df_rank = loadings_df[loadings_df["eigen_rank"] == rank]
+        top_8 = df_rank.sort_values("abs_loading", ascending=False).head(8)
+        top_8_records.append(top_8)
         
-    for k, ax in enumerate(axes):
-        rank = k + 1
-        df_rank = loadings_df[loadings_df["eigen_rank"] == rank].copy()
-        
-        # Sort symbols for consistent x-axis across panels?
-        # Usually, x-axis is either sorted by original symbol list or sorted by loadings.
-        # To make panels comparable, let's keep the same x-axis order (e.g. by sector, or by Market Mode loading).
-        # Let's sort globally by Market Mode loading (Eigenvector 1) to make the plot clean.
-        if k == 0:
-            global_sort_order = df_rank.sort_values("loading", ascending=False)["symbol"].tolist()
+    top_8_df = pd.concat(top_8_records, ignore_index=True)
+    out_top_8 = OUTPUT_DIR / "rmt_top_8_assets_per_eigenvector_core_historical_1998_2025.csv"
+    top_8_df.to_csv(out_top_8, index=False)
+    print(f"Saved {out_top_8}")
+    
+    # Helper to plot Figure 7
+    def plot_figure_7(df_data, is_top15=False):
+        suffix = "top_loadings" if is_top15 else "all_assets"
+        fig, axes = plt.subplots(n_above_lambda_max, 1, figsize=(10, 2.5 * n_above_lambda_max), sharex=False)
+        if n_above_lambda_max == 1:
+            axes = [axes]
             
-        df_rank["symbol"] = pd.Categorical(df_rank["symbol"], categories=global_sort_order, ordered=True)
-        df_rank = df_rank.sort_values("symbol")
+        global_sort_order = loadings_df[loadings_df["eigen_rank"] == 1].sort_values("loading", ascending=False)["symbol"].tolist()
+            
+        for k, ax in enumerate(axes):
+            rank = k + 1
+            df_rank = df_data[df_data["eigen_rank"] == rank].copy()
+            
+            if is_top15:
+                # Sort by abs_loading to get top 15, but preserve original sign
+                df_rank = df_rank.sort_values("abs_loading", ascending=False).head(15)
+                # Sort these top 15 by loading for better visual
+                df_rank = df_rank.sort_values("loading", ascending=False)
+            else:
+                df_rank["symbol"] = pd.Categorical(df_rank["symbol"], categories=global_sort_order, ordered=True)
+                df_rank = df_rank.sort_values("symbol")
+            
+            bars = ax.bar(df_rank["symbol"].astype(str), df_rank["loading"], color="darkgray", edgecolor="none")
+            
+            # Title logic
+            if rank == 1:
+                title_str = f"Eigenvector 1 ($\lambda = {df_rank['eigenvalue'].iloc[0]:.2f}$) | Market Mode"
+            else:
+                top_sec = sector_summary_df[sector_summary_df["eigen_rank"] == rank].sort_values("sum_abs_loading", ascending=False).iloc[0]["sector"]
+                title_str = f"Eigenvector {rank} ($\lambda = {df_rank['eigenvalue'].iloc[0]:.2f}$) | Dominant Sector: {top_sec}"
+                
+            ax.set_title(title_str, fontsize=11, pad=5)
+            ax.axhline(0, color="black", linewidth=0.8)
+            ax.grid(True, alpha=0.15, linestyle="--", axis="y")
+            ax.tick_params(axis="x", labelrotation=90, labelsize=8 if is_top15 else 7)
+            ax.set_ylabel("Loading", fontsize=10)
+            
+        plt.tight_layout()
+        pdf_path = FIGURES_DIR / "vector" / f"figure_7a_rmt_top_eigenvectors_{suffix}.pdf" if not is_top15 else FIGURES_DIR / "vector" / f"figure_7b_rmt_top_eigenvectors_{suffix}.pdf"
+        png_path = FIGURES_DIR / "preview" / f"figure_7a_rmt_top_eigenvectors_{suffix}.png" if not is_top15 else FIGURES_DIR / "preview" / f"figure_7b_rmt_top_eigenvectors_{suffix}.png"
         
-        bars = ax.bar(df_rank["symbol"], df_rank["loading"], color="darkgray", edgecolor="none")
+        plt.savefig(pdf_path, format="pdf", bbox_inches="tight")
+        plt.savefig(png_path, dpi=300, bbox_inches="tight")
+        plt.close()
+        print(f"Saved {pdf_path}")
+
+    # Generate Figure 7a and 7b
+    plot_figure_7(loadings_df, is_top15=False)
+    plot_figure_7(loadings_df, is_top15=True)
+    
+    # --- Phase 7.2 Matrix Reconstruction ---
+    print("\nReconstructing correlation matrices...")
+    
+    C_market = np.zeros((N, N))
+    C_group = np.zeros((N, N))
+    C_noise = np.zeros((N, N))
+    
+    for k in range(N):
+        lam = eigvals_desc[k]
+        u = eigvecs_desc[:, k:k+1] # column vector
+        outer_product = lam * (u @ u.T)
         
-        # Optional: color bars by sector. For now, neutral gray is safer as per spec, to avoid noise.
-        # Let's just highlight the title with the dominant sector logic.
-        top_sec = sector_summary_df[sector_summary_df["eigen_rank"] == rank].sort_values("sum_abs_loading", ascending=False).iloc[0]["sector"]
-        ax.set_title(f"Eigenvector {rank} ($\lambda = {df_rank['eigenvalue'].iloc[0]:.2f}$) | Dominant Sector: {top_sec}", fontsize=11, pad=5)
-        ax.axhline(0, color="black", linewidth=0.8)
-        ax.grid(True, alpha=0.15, linestyle="--", axis="y")
-        ax.tick_params(axis="x", labelrotation=90, labelsize=7)
-        ax.set_ylabel("Loading", fontsize=10)
+        if k == 0:
+            C_market += outer_product
+        elif k < n_above_lambda_max:
+            C_group += outer_product
+        else:
+            C_noise += outer_product
+            
+    C_filtered = C_market + C_group
+    np.fill_diagonal(C_filtered, 1.0)
+    
+    # Export Matrices
+    def save_matrix(matrix, filename):
+        df_mat = pd.DataFrame(matrix, index=symbols, columns=symbols)
+        path = OUTPUT_DIR / filename
+        df_mat.to_csv(path)
+        print(f"Saved {path}")
+        
+    save_matrix(C_market, "correlation_market_mode_core_historical_1998_2025.csv")
+    save_matrix(C_group, "correlation_group_mode_core_historical_1998_2025.csv")
+    save_matrix(C_noise, "correlation_noise_mode_core_historical_1998_2025.csv")
+    save_matrix(C_filtered, "correlation_filtered_core_historical_1998_2025.csv")
+    
+    # Plot Figure 8 Heatmaps
+    fig, axes = plt.subplots(1, 5, figsize=(20, 4))
+    
+    matrices = [corr_matrix, C_market, C_group, C_noise, C_filtered]
+    titles = ["Original", "Market Mode", "Group/Sector Mode", "Noise Component", "Filtered (Market + Group)"]
+    
+    for ax, mat, title in zip(axes, matrices, titles):
+        im = ax.imshow(mat, cmap="coolwarm", vmin=-1 if title != "Group/Sector Mode" and title != "Noise Component" else -0.5, 
+                       vmax=1 if title != "Group/Sector Mode" and title != "Noise Component" else 0.5)
+        ax.set_title(title, fontsize=12)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
         
     plt.tight_layout()
-    pdf_path_7 = FIGURES_DIR / "vector" / "figure_7_rmt_top_eigenvectors.pdf"
-    png_path_7 = FIGURES_DIR / "preview" / "figure_7_rmt_top_eigenvectors.png"
-    plt.savefig(pdf_path_7, format="pdf", bbox_inches="tight")
-    plt.savefig(png_path_7, dpi=300, bbox_inches="tight")
+    pdf_path_8 = FIGURES_DIR / "vector" / "figure_8_rmt_filtered_matrices.pdf"
+    png_path_8 = FIGURES_DIR / "preview" / "figure_8_rmt_filtered_matrices.png"
+    plt.savefig(pdf_path_8, format="pdf", bbox_inches="tight")
+    plt.savefig(png_path_8, dpi=300, bbox_inches="tight")
     plt.close()
-    print(f"Saved Figure 7 to {pdf_path_7} and {png_path_7}")
+    
+    print(f"Saved Figure 8 to {pdf_path_8} and {png_path_8}")
 
 
 if __name__ == "__main__":

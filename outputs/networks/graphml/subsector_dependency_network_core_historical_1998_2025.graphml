@@ -1,0 +1,1171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d21" for="edge" attr.name="weight" attr.type="float" />
+  <key id="d20" for="edge" attr.name="same_sector" attr.type="boolean" />
+  <key id="d19" for="edge" attr.name="n_pairwise_links" attr.type="long" />
+  <key id="d18" for="edge" attr.name="mean_abs_dependency" attr.type="float" />
+  <key id="d17" for="edge" attr.name="mean_dependency" attr.type="float" />
+  <key id="d16" for="edge" attr.name="subsector_target" attr.type="string" />
+  <key id="d15" for="edge" attr.name="subsector_source" attr.type="string" />
+  <key id="d14" for="edge" attr.name="sector_target" attr.type="string" />
+  <key id="d13" for="edge" attr.name="sector_source" attr.type="string" />
+  <key id="d12" for="edge" attr.name="target" attr.type="string" />
+  <key id="d11" for="edge" attr.name="source" attr.type="string" />
+  <key id="d10" for="node" attr.name="betweenness" attr.type="double" />
+  <key id="d9" for="node" attr.name="weighted_degree" attr.type="float" />
+  <key id="d8" for="node" attr.name="degree" attr.type="long" />
+  <key id="d7" for="node" attr.name="internal_median_correlation" attr.type="double" />
+  <key id="d6" for="node" attr.name="internal_mean_correlation" attr.type="double" />
+  <key id="d5" for="node" attr.name="total_financial_volume" attr.type="double" />
+  <key id="d4" for="node" attr.name="avg_financial_volume" attr.type="double" />
+  <key id="d3" for="node" attr.name="n_assets" attr.type="long" />
+  <key id="d2" for="node" attr.name="sector" attr.type="string" />
+  <key id="d1" for="node" attr.name="subsector" attr.type="string" />
+  <key id="d0" for="node" attr.name="node_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Aerospace and Defense">
+      <data key="d0">Aerospace and Defense</data>
+      <data key="d1">Aerospace and Defense</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">4</data>
+      <data key="d9">0.1354762009238132</data>
+      <data key="d10">0.0380952380952381</data>
+    </node>
+    <node id="Apparel and Footwear">
+      <data key="d0">Apparel and Footwear</data>
+      <data key="d1">Apparel and Footwear</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.1676207562061225</data>
+      <data key="d7">0.1676207562061225</data>
+      <data key="d8">12</data>
+      <data key="d9">0.9412415848958507</data>
+      <data key="d10">0.01904761904761905</data>
+    </node>
+    <node id="Banks">
+      <data key="d0">Banks</data>
+      <data key="d1">Banks</data>
+      <data key="d2">Financials</data>
+      <data key="d3">5</data>
+      <data key="d4">1.0</data>
+      <data key="d5">5.0</data>
+      <data key="d6">0.08413788088815051</data>
+      <data key="d7">0.06236337730111275</data>
+      <data key="d8">5</data>
+      <data key="d9">0.25400756967722693</data>
+      <data key="d10">0.07857142857142858</data>
+    </node>
+    <node id="Chemicals">
+      <data key="d0">Chemicals</data>
+      <data key="d1">Chemicals</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">3</data>
+      <data key="d4">1.0</data>
+      <data key="d5">3.0</data>
+      <data key="d6">0.04973897977928366</data>
+      <data key="d7">0.0447315850819949</data>
+      <data key="d8">6</data>
+      <data key="d9">0.21335179290049705</data>
+      <data key="d10">0.2833333333333334</data>
+    </node>
+    <node id="Construction Materials">
+      <data key="d0">Construction Materials</data>
+      <data key="d1">Construction Materials</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">9</data>
+      <data key="d9">0.605465966180269</data>
+      <data key="d10">0.009523809523809525</data>
+    </node>
+    <node id="Electric Utility">
+      <data key="d0">Electric Utility</data>
+      <data key="d1">Electric Utility</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">10</data>
+      <data key="d4">1.0</data>
+      <data key="d5">10.0</data>
+      <data key="d6">0.10331917547207135</data>
+      <data key="d7">0.1262307821936296</data>
+      <data key="d8">4</data>
+      <data key="d9">0.10795723688670186</data>
+      <data key="d10">0.330952380952381</data>
+    </node>
+    <node id="Financial Services">
+      <data key="d0">Financial Services</data>
+      <data key="d1">Financial Services</data>
+      <data key="d2">Financials</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.1096267576479067</data>
+      <data key="d7">0.1096267576479067</data>
+      <data key="d8">4</data>
+      <data key="d9">0.2910930439764253</data>
+      <data key="d10">0.0</data>
+    </node>
+    <node id="Gas Utility">
+      <data key="d0">Gas Utility</data>
+      <data key="d1">Gas Utility</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">5</data>
+      <data key="d9">0.2562513521944138</data>
+      <data key="d10">0.01904761904761905</data>
+    </node>
+    <node id="Insurance">
+      <data key="d0">Insurance</data>
+      <data key="d1">Insurance</data>
+      <data key="d2">Financials</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">7</data>
+      <data key="d9">0.3800722778257471</data>
+      <data key="d10">0.01904761904761905</data>
+    </node>
+    <node id="Machinery and Equipment">
+      <data key="d0">Machinery and Equipment</data>
+      <data key="d1">Machinery and Equipment</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">3</data>
+      <data key="d4">1.0</data>
+      <data key="d5">3.0</data>
+      <data key="d6">0.08530445097588762</data>
+      <data key="d7">0.0514949143097519</data>
+      <data key="d8">8</data>
+      <data key="d9">0.4972225275536812</data>
+      <data key="d10">0.05714285714285715</data>
+    </node>
+    <node id="Mining">
+      <data key="d0">Mining</data>
+      <data key="d1">Mining</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">3</data>
+      <data key="d4">1.0</data>
+      <data key="d5">3.0</data>
+      <data key="d6">0.23299526924887468</data>
+      <data key="d7">0.2216544210210716</data>
+      <data key="d8">4</data>
+      <data key="d9">0.30050175485013836</data>
+      <data key="d10">0.01904761904761905</data>
+    </node>
+    <node id="Oil Gas and Biofuels">
+      <data key="d0">Oil Gas and Biofuels</data>
+      <data key="d1">Oil Gas and Biofuels</data>
+      <data key="d2">Oil Gas and Biofuels</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.0714157287977677</data>
+      <data key="d7">0.0714157287977677</data>
+      <data key="d8">6</data>
+      <data key="d9">0.2601559538928058</data>
+      <data key="d10">0.12142857142857144</data>
+    </node>
+    <node id="Paper and Cellulose">
+      <data key="d0">Paper and Cellulose</data>
+      <data key="d1">Paper and Cellulose</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">4</data>
+      <data key="d9">0.20816752304227326</data>
+      <data key="d10">0.05714285714285715</data>
+    </node>
+    <node id="Personal and Home Care">
+      <data key="d0">Personal and Home Care</data>
+      <data key="d1">Personal and Home Care</data>
+      <data key="d2">Consumer Non-Cyclical</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">5</data>
+      <data key="d9">0.26404534763547366</data>
+      <data key="d10">0.004761904761904762</data>
+    </node>
+    <node id="Real Estate">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Real Estate</data>
+      <data key="d2">Real Estate</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.0092765373462312</data>
+      <data key="d7">0.0092765373462312</data>
+      <data key="d8">4</data>
+      <data key="d9">0.1560936978219456</data>
+      <data key="d10">0.04761904761904762</data>
+    </node>
+    <node id="Retail">
+      <data key="d0">Retail</data>
+      <data key="d1">Retail</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.1202186036849879</data>
+      <data key="d7">0.1202186036849879</data>
+      <data key="d8">13</data>
+      <data key="d9">0.855047569397185</data>
+      <data key="d10">0.06666666666666668</data>
+    </node>
+    <node id="Steel and Metallurgy">
+      <data key="d0">Steel and Metallurgy</data>
+      <data key="d1">Steel and Metallurgy</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">9</data>
+      <data key="d4">1.0</data>
+      <data key="d5">9.0</data>
+      <data key="d6">0.11609023230181169</data>
+      <data key="d7">0.1542388931424567</data>
+      <data key="d8">4</data>
+      <data key="d9">0.25133788813506025</data>
+      <data key="d10">0.08571428571428572</data>
+    </node>
+    <node id="Telecommunications">
+      <data key="d0">Telecommunications</data>
+      <data key="d1">Telecommunications</data>
+      <data key="d2">Telecommunications</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.7954819015600003</data>
+      <data key="d7">0.7954819015600003</data>
+      <data key="d8">4</data>
+      <data key="d9">0.12043558273495489</data>
+      <data key="d10">0.07142857142857144</data>
+    </node>
+    <node id="Textiles">
+      <data key="d0">Textiles</data>
+      <data key="d1">Textiles</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">1</data>
+      <data key="d4">1.0</data>
+      <data key="d5">1.0</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">7</data>
+      <data key="d9">0.47471634742314106</data>
+      <data key="d10">0.04761904761904762</data>
+    </node>
+    <node id="Transportation">
+      <data key="d0">Transportation</data>
+      <data key="d1">Transportation</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.0428449537917681</data>
+      <data key="d7">0.0428449537917681</data>
+      <data key="d8">8</data>
+      <data key="d9">0.3689191559921614</data>
+      <data key="d10">0.32142857142857145</data>
+    </node>
+    <node id="Transportation Equipment">
+      <data key="d0">Transportation Equipment</data>
+      <data key="d1">Transportation Equipment</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.0583616518017856</data>
+      <data key="d7">0.0583616518017856</data>
+      <data key="d8">5</data>
+      <data key="d9">0.35950838505844107</data>
+      <data key="d10">0.0</data>
+    </node>
+    <node id="Water and Sanitation">
+      <data key="d0">Water and Sanitation</data>
+      <data key="d1">Water and Sanitation</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">2</data>
+      <data key="d4">1.0</data>
+      <data key="d5">2.0</data>
+      <data key="d6">0.0691396497950908</data>
+      <data key="d7">0.0691396497950908</data>
+      <data key="d8">4</data>
+      <data key="d9">0.17375934596544984</data>
+      <data key="d10">0.014285714285714287</data>
+    </node>
+    <edge source="Aerospace and Defense" target="Apparel and Footwear">
+      <data key="d11">Aerospace and Defense</data>
+      <data key="d12">Apparel and Footwear</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Aerospace and Defense</data>
+      <data key="d16">Apparel and Footwear</data>
+      <data key="d17">0.04210516535119415</data>
+      <data key="d18">0.04210516535119415</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.04210516535119415</data>
+    </edge>
+    <edge source="Aerospace and Defense" target="Construction Materials">
+      <data key="d11">Aerospace and Defense</data>
+      <data key="d12">Construction Materials</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Aerospace and Defense</data>
+      <data key="d16">Construction Materials</data>
+      <data key="d17">0.0295978749872482</data>
+      <data key="d18">0.0295978749872482</data>
+      <data key="d19">1</data>
+      <data key="d20">True</data>
+      <data key="d21">0.0295978749872482</data>
+    </edge>
+    <edge source="Aerospace and Defense" target="Textiles">
+      <data key="d11">Aerospace and Defense</data>
+      <data key="d12">Textiles</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Aerospace and Defense</data>
+      <data key="d16">Textiles</data>
+      <data key="d17">0.0278075530940671</data>
+      <data key="d18">0.0278075530940671</data>
+      <data key="d19">1</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0278075530940671</data>
+    </edge>
+    <edge source="Aerospace and Defense" target="Retail">
+      <data key="d11">Aerospace and Defense</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Aerospace and Defense</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.03596560749130375</data>
+      <data key="d18">0.03596560749130375</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.03596560749130375</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Textiles">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Textiles</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Textiles</data>
+      <data key="d17">0.1046454400698633</data>
+      <data key="d18">0.1046454400698633</data>
+      <data key="d19">2</data>
+      <data key="d20">True</data>
+      <data key="d21">0.1046454400698633</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Construction Materials">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Construction Materials</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Construction Materials</data>
+      <data key="d17">0.10200380786112309</data>
+      <data key="d18">0.10200380786112309</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.10200380786112309</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Machinery and Equipment">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Machinery and Equipment</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Machinery and Equipment</data>
+      <data key="d17">0.08599015669419573</data>
+      <data key="d18">0.08599015669419573</data>
+      <data key="d19">6</data>
+      <data key="d20">False</data>
+      <data key="d21">0.08599015669419573</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Real Estate">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Real Estate</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Real Estate</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Real Estate</data>
+      <data key="d17">0.04637398660955435</data>
+      <data key="d18">0.04637398660955435</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.04637398660955435</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Gas Utility">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Gas Utility</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Gas Utility</data>
+      <data key="d17">0.06467234197559645</data>
+      <data key="d18">0.06467234197559645</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.06467234197559645</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Retail">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.14984764453918548</data>
+      <data key="d18">0.14984764453918548</data>
+      <data key="d19">4</data>
+      <data key="d20">True</data>
+      <data key="d21">0.14984764453918548</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Transportation Equipment">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Transportation Equipment</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Transportation Equipment</data>
+      <data key="d17">0.09961687235178114</data>
+      <data key="d18">0.09961687235178114</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.09961687235178114</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Transportation">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.08816652263211178</data>
+      <data key="d18">0.08816652263211178</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.08816652263211178</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Water and Sanitation">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Water and Sanitation</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Water and Sanitation</data>
+      <data key="d17">0.024015170739902926</data>
+      <data key="d18">0.024015170739902926</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.024015170739902926</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Personal and Home Care">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Personal and Home Care</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Consumer Non-Cyclical</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Personal and Home Care</data>
+      <data key="d17">0.0670322164083125</data>
+      <data key="d18">0.0670322164083125</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0670322164083125</data>
+    </edge>
+    <edge source="Apparel and Footwear" target="Insurance">
+      <data key="d11">Apparel and Footwear</data>
+      <data key="d12">Insurance</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Financials</data>
+      <data key="d15">Apparel and Footwear</data>
+      <data key="d16">Insurance</data>
+      <data key="d17">0.06677225966302995</data>
+      <data key="d18">0.06677225966302995</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.06677225966302995</data>
+    </edge>
+    <edge source="Banks" target="Insurance">
+      <data key="d11">Banks</data>
+      <data key="d12">Insurance</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Financials</data>
+      <data key="d15">Banks</data>
+      <data key="d16">Insurance</data>
+      <data key="d17">0.05762601139698288</data>
+      <data key="d18">0.05762601139698288</data>
+      <data key="d19">5</data>
+      <data key="d20">True</data>
+      <data key="d21">0.05762601139698288</data>
+    </edge>
+    <edge source="Banks" target="Mining">
+      <data key="d11">Banks</data>
+      <data key="d12">Mining</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Banks</data>
+      <data key="d16">Mining</data>
+      <data key="d17">-0.0029723523913214797</data>
+      <data key="d18">0.0029723523913214797</data>
+      <data key="d19">15</data>
+      <data key="d20">False</data>
+      <data key="d21">-0.0029723523913214797</data>
+    </edge>
+    <edge source="Banks" target="Financial Services">
+      <data key="d11">Banks</data>
+      <data key="d12">Financial Services</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Financials</data>
+      <data key="d15">Banks</data>
+      <data key="d16">Financial Services</data>
+      <data key="d17">0.1013789371357164</data>
+      <data key="d18">0.1013789371357164</data>
+      <data key="d19">10</data>
+      <data key="d20">True</data>
+      <data key="d21">0.1013789371357164</data>
+    </edge>
+    <edge source="Banks" target="Oil Gas and Biofuels">
+      <data key="d11">Banks</data>
+      <data key="d12">Oil Gas and Biofuels</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Oil Gas and Biofuels</data>
+      <data key="d15">Banks</data>
+      <data key="d16">Oil Gas and Biofuels</data>
+      <data key="d17">0.06984522783614353</data>
+      <data key="d18">0.06984522783614353</data>
+      <data key="d19">10</data>
+      <data key="d20">False</data>
+      <data key="d21">0.06984522783614353</data>
+    </edge>
+    <edge source="Banks" target="Transportation">
+      <data key="d11">Banks</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Banks</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.02812974569970562</data>
+      <data key="d18">0.02812974569970562</data>
+      <data key="d19">10</data>
+      <data key="d20">False</data>
+      <data key="d21">0.02812974569970562</data>
+    </edge>
+    <edge source="Chemicals" target="Personal and Home Care">
+      <data key="d11">Chemicals</data>
+      <data key="d12">Personal and Home Care</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Consumer Non-Cyclical</data>
+      <data key="d15">Chemicals</data>
+      <data key="d16">Personal and Home Care</data>
+      <data key="d17">0.029520120799150996</data>
+      <data key="d18">0.029520120799150996</data>
+      <data key="d19">3</data>
+      <data key="d20">False</data>
+      <data key="d21">0.029520120799150996</data>
+    </edge>
+    <edge source="Chemicals" target="Electric Utility">
+      <data key="d11">Chemicals</data>
+      <data key="d12">Electric Utility</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Chemicals</data>
+      <data key="d16">Electric Utility</data>
+      <data key="d17">0.010548482618165149</data>
+      <data key="d18">0.010548482618165149</data>
+      <data key="d19">30</data>
+      <data key="d20">False</data>
+      <data key="d21">0.010548482618165149</data>
+    </edge>
+    <edge source="Chemicals" target="Textiles">
+      <data key="d11">Chemicals</data>
+      <data key="d12">Textiles</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Chemicals</data>
+      <data key="d16">Textiles</data>
+      <data key="d17">0.03879591175469863</data>
+      <data key="d18">0.03879591175469863</data>
+      <data key="d19">3</data>
+      <data key="d20">False</data>
+      <data key="d21">0.03879591175469863</data>
+    </edge>
+    <edge source="Chemicals" target="Construction Materials">
+      <data key="d11">Chemicals</data>
+      <data key="d12">Construction Materials</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Chemicals</data>
+      <data key="d16">Construction Materials</data>
+      <data key="d17">0.046672847505665936</data>
+      <data key="d18">0.046672847505665936</data>
+      <data key="d19">3</data>
+      <data key="d20">False</data>
+      <data key="d21">0.046672847505665936</data>
+    </edge>
+    <edge source="Chemicals" target="Machinery and Equipment">
+      <data key="d11">Chemicals</data>
+      <data key="d12">Machinery and Equipment</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Chemicals</data>
+      <data key="d16">Machinery and Equipment</data>
+      <data key="d17">0.06246582524963911</data>
+      <data key="d18">0.06246582524963911</data>
+      <data key="d19">9</data>
+      <data key="d20">False</data>
+      <data key="d21">0.06246582524963911</data>
+    </edge>
+    <edge source="Chemicals" target="Steel and Metallurgy">
+      <data key="d11">Chemicals</data>
+      <data key="d12">Steel and Metallurgy</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Chemicals</data>
+      <data key="d16">Steel and Metallurgy</data>
+      <data key="d17">0.0253486049731772</data>
+      <data key="d18">0.0253486049731772</data>
+      <data key="d19">27</data>
+      <data key="d20">True</data>
+      <data key="d21">0.0253486049731772</data>
+    </edge>
+    <edge source="Construction Materials" target="Gas Utility">
+      <data key="d11">Construction Materials</data>
+      <data key="d12">Gas Utility</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Construction Materials</data>
+      <data key="d16">Gas Utility</data>
+      <data key="d17">0.0539008478246034</data>
+      <data key="d18">0.0539008478246034</data>
+      <data key="d19">1</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0539008478246034</data>
+    </edge>
+    <edge source="Construction Materials" target="Retail">
+      <data key="d11">Construction Materials</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Construction Materials</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.0849839712249015</data>
+      <data key="d18">0.0849839712249015</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0849839712249015</data>
+    </edge>
+    <edge source="Construction Materials" target="Transportation Equipment">
+      <data key="d11">Construction Materials</data>
+      <data key="d12">Transportation Equipment</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Construction Materials</data>
+      <data key="d16">Transportation Equipment</data>
+      <data key="d17">0.06555282132378809</data>
+      <data key="d18">0.06555282132378809</data>
+      <data key="d19">2</data>
+      <data key="d20">True</data>
+      <data key="d21">0.06555282132378809</data>
+    </edge>
+    <edge source="Construction Materials" target="Personal and Home Care">
+      <data key="d11">Construction Materials</data>
+      <data key="d12">Personal and Home Care</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Non-Cyclical</data>
+      <data key="d15">Construction Materials</data>
+      <data key="d16">Personal and Home Care</data>
+      <data key="d17">0.05651790198513</data>
+      <data key="d18">0.05651790198513</data>
+      <data key="d19">1</data>
+      <data key="d20">False</data>
+      <data key="d21">0.05651790198513</data>
+    </edge>
+    <edge source="Construction Materials" target="Textiles">
+      <data key="d11">Construction Materials</data>
+      <data key="d12">Textiles</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Construction Materials</data>
+      <data key="d16">Textiles</data>
+      <data key="d17">0.0803620007940812</data>
+      <data key="d18">0.0803620007940812</data>
+      <data key="d19">1</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0803620007940812</data>
+    </edge>
+    <edge source="Construction Materials" target="Machinery and Equipment">
+      <data key="d11">Construction Materials</data>
+      <data key="d12">Machinery and Equipment</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Construction Materials</data>
+      <data key="d16">Machinery and Equipment</data>
+      <data key="d17">0.08587389267372757</data>
+      <data key="d18">0.08587389267372757</data>
+      <data key="d19">3</data>
+      <data key="d20">True</data>
+      <data key="d21">0.08587389267372757</data>
+    </edge>
+    <edge source="Electric Utility" target="Machinery and Equipment">
+      <data key="d11">Electric Utility</data>
+      <data key="d12">Machinery and Equipment</data>
+      <data key="d13">Utilities</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Electric Utility</data>
+      <data key="d16">Machinery and Equipment</data>
+      <data key="d17">0.005758573933785984</data>
+      <data key="d18">0.005758573933785984</data>
+      <data key="d19">30</data>
+      <data key="d20">False</data>
+      <data key="d21">0.005758573933785984</data>
+    </edge>
+    <edge source="Electric Utility" target="Transportation">
+      <data key="d11">Electric Utility</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Utilities</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Electric Utility</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.0034804207859122195</data>
+      <data key="d18">0.0034804207859122195</data>
+      <data key="d19">20</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0034804207859122195</data>
+    </edge>
+    <edge source="Electric Utility" target="Water and Sanitation">
+      <data key="d11">Electric Utility</data>
+      <data key="d12">Water and Sanitation</data>
+      <data key="d13">Utilities</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Electric Utility</data>
+      <data key="d16">Water and Sanitation</data>
+      <data key="d17">0.0881697595488385</data>
+      <data key="d18">0.0881697595488385</data>
+      <data key="d19">20</data>
+      <data key="d20">True</data>
+      <data key="d21">0.0881697595488385</data>
+    </edge>
+    <edge source="Financial Services" target="Oil Gas and Biofuels">
+      <data key="d11">Financial Services</data>
+      <data key="d12">Oil Gas and Biofuels</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Oil Gas and Biofuels</data>
+      <data key="d15">Financial Services</data>
+      <data key="d16">Oil Gas and Biofuels</data>
+      <data key="d17">0.07732679787198235</data>
+      <data key="d18">0.07732679787198235</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.07732679787198235</data>
+    </edge>
+    <edge source="Financial Services" target="Transportation">
+      <data key="d11">Financial Services</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Financial Services</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.040820063795452555</data>
+      <data key="d18">0.040820063795452555</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.040820063795452555</data>
+    </edge>
+    <edge source="Financial Services" target="Insurance">
+      <data key="d11">Financial Services</data>
+      <data key="d12">Insurance</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Financials</data>
+      <data key="d15">Financial Services</data>
+      <data key="d16">Insurance</data>
+      <data key="d17">0.071567245173274</data>
+      <data key="d18">0.071567245173274</data>
+      <data key="d19">2</data>
+      <data key="d20">True</data>
+      <data key="d21">0.071567245173274</data>
+    </edge>
+    <edge source="Gas Utility" target="Telecommunications">
+      <data key="d11">Gas Utility</data>
+      <data key="d12">Telecommunications</data>
+      <data key="d13">Utilities</data>
+      <data key="d14">Telecommunications</data>
+      <data key="d15">Gas Utility</data>
+      <data key="d16">Telecommunications</data>
+      <data key="d17">0.02687234398751425</data>
+      <data key="d18">0.02687234398751425</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.02687234398751425</data>
+    </edge>
+    <edge source="Gas Utility" target="Machinery and Equipment">
+      <data key="d11">Gas Utility</data>
+      <data key="d12">Machinery and Equipment</data>
+      <data key="d13">Utilities</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Gas Utility</data>
+      <data key="d16">Machinery and Equipment</data>
+      <data key="d17">0.054541106765236234</data>
+      <data key="d18">0.054541106765236234</data>
+      <data key="d19">3</data>
+      <data key="d20">False</data>
+      <data key="d21">0.054541106765236234</data>
+    </edge>
+    <edge source="Gas Utility" target="Retail">
+      <data key="d11">Gas Utility</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Utilities</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Gas Utility</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.0562647116414635</data>
+      <data key="d18">0.0562647116414635</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0562647116414635</data>
+    </edge>
+    <edge source="Insurance" target="Real Estate">
+      <data key="d11">Insurance</data>
+      <data key="d12">Real Estate</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Real Estate</data>
+      <data key="d15">Insurance</data>
+      <data key="d16">Real Estate</data>
+      <data key="d17">0.03431792760917735</data>
+      <data key="d18">0.03431792760917735</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.03431792760917735</data>
+    </edge>
+    <edge source="Insurance" target="Oil Gas and Biofuels">
+      <data key="d11">Insurance</data>
+      <data key="d12">Oil Gas and Biofuels</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Oil Gas and Biofuels</data>
+      <data key="d15">Insurance</data>
+      <data key="d16">Oil Gas and Biofuels</data>
+      <data key="d17">0.03783325111866705</data>
+      <data key="d18">0.03783325111866705</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.03783325111866705</data>
+    </edge>
+    <edge source="Insurance" target="Retail">
+      <data key="d11">Insurance</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Insurance</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.05968387966294565</data>
+      <data key="d18">0.05968387966294565</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.05968387966294565</data>
+    </edge>
+    <edge source="Insurance" target="Transportation">
+      <data key="d11">Insurance</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Financials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Insurance</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.052271703201670155</data>
+      <data key="d18">0.052271703201670155</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.052271703201670155</data>
+    </edge>
+    <edge source="Machinery and Equipment" target="Textiles">
+      <data key="d11">Machinery and Equipment</data>
+      <data key="d12">Textiles</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Machinery and Equipment</data>
+      <data key="d16">Textiles</data>
+      <data key="d17">0.07625464098793212</data>
+      <data key="d18">0.07625464098793212</data>
+      <data key="d19">3</data>
+      <data key="d20">False</data>
+      <data key="d21">0.07625464098793212</data>
+    </edge>
+    <edge source="Machinery and Equipment" target="Retail">
+      <data key="d11">Machinery and Equipment</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Machinery and Equipment</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.07120093501794884</data>
+      <data key="d18">0.07120093501794884</data>
+      <data key="d19">6</data>
+      <data key="d20">False</data>
+      <data key="d21">0.07120093501794884</data>
+    </edge>
+    <edge source="Machinery and Equipment" target="Personal and Home Care">
+      <data key="d11">Machinery and Equipment</data>
+      <data key="d12">Personal and Home Care</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Consumer Non-Cyclical</data>
+      <data key="d15">Machinery and Equipment</data>
+      <data key="d16">Personal and Home Care</data>
+      <data key="d17">0.05513739623121561</data>
+      <data key="d18">0.05513739623121561</data>
+      <data key="d19">3</data>
+      <data key="d20">False</data>
+      <data key="d21">0.05513739623121561</data>
+    </edge>
+    <edge source="Mining" target="Paper and Cellulose">
+      <data key="d11">Mining</data>
+      <data key="d12">Paper and Cellulose</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Mining</data>
+      <data key="d16">Paper and Cellulose</data>
+      <data key="d17">0.09050394228503257</data>
+      <data key="d18">0.09050394228503257</data>
+      <data key="d19">3</data>
+      <data key="d20">True</data>
+      <data key="d21">0.09050394228503257</data>
+    </edge>
+    <edge source="Mining" target="Steel and Metallurgy">
+      <data key="d11">Mining</data>
+      <data key="d12">Steel and Metallurgy</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Mining</data>
+      <data key="d16">Steel and Metallurgy</data>
+      <data key="d17">0.15276732846223606</data>
+      <data key="d18">0.15276732846223606</data>
+      <data key="d19">27</data>
+      <data key="d20">True</data>
+      <data key="d21">0.15276732846223606</data>
+    </edge>
+    <edge source="Mining" target="Oil Gas and Biofuels">
+      <data key="d11">Mining</data>
+      <data key="d12">Oil Gas and Biofuels</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Oil Gas and Biofuels</data>
+      <data key="d15">Mining</data>
+      <data key="d16">Oil Gas and Biofuels</data>
+      <data key="d17">0.06020283649419119</data>
+      <data key="d18">0.06020283649419119</data>
+      <data key="d19">6</data>
+      <data key="d20">False</data>
+      <data key="d21">0.06020283649419119</data>
+    </edge>
+    <edge source="Oil Gas and Biofuels" target="Paper and Cellulose">
+      <data key="d11">Oil Gas and Biofuels</data>
+      <data key="d12">Paper and Cellulose</data>
+      <data key="d13">Oil Gas and Biofuels</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Oil Gas and Biofuels</data>
+      <data key="d16">Paper and Cellulose</data>
+      <data key="d17">0.0089934023273135</data>
+      <data key="d18">0.0089934023273135</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0089934023273135</data>
+    </edge>
+    <edge source="Oil Gas and Biofuels" target="Steel and Metallurgy">
+      <data key="d11">Oil Gas and Biofuels</data>
+      <data key="d12">Steel and Metallurgy</data>
+      <data key="d13">Oil Gas and Biofuels</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Oil Gas and Biofuels</data>
+      <data key="d16">Steel and Metallurgy</data>
+      <data key="d17">0.005954438244508211</data>
+      <data key="d18">0.005954438244508211</data>
+      <data key="d19">18</data>
+      <data key="d20">False</data>
+      <data key="d21">0.005954438244508211</data>
+    </edge>
+    <edge source="Paper and Cellulose" target="Telecommunications">
+      <data key="d11">Paper and Cellulose</data>
+      <data key="d12">Telecommunications</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Telecommunications</data>
+      <data key="d15">Paper and Cellulose</data>
+      <data key="d16">Telecommunications</data>
+      <data key="d17">0.041402661974788396</data>
+      <data key="d18">0.041402661974788396</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.041402661974788396</data>
+    </edge>
+    <edge source="Paper and Cellulose" target="Steel and Metallurgy">
+      <data key="d11">Paper and Cellulose</data>
+      <data key="d12">Steel and Metallurgy</data>
+      <data key="d13">Basic Materials</data>
+      <data key="d14">Basic Materials</data>
+      <data key="d15">Paper and Cellulose</data>
+      <data key="d16">Steel and Metallurgy</data>
+      <data key="d17">0.06726751645513877</data>
+      <data key="d18">0.06726751645513877</data>
+      <data key="d19">9</data>
+      <data key="d20">True</data>
+      <data key="d21">0.06726751645513877</data>
+    </edge>
+    <edge source="Personal and Home Care" target="Retail">
+      <data key="d11">Personal and Home Care</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Consumer Non-Cyclical</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Personal and Home Care</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.05583771221166455</data>
+      <data key="d18">0.05583771221166455</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.05583771221166455</data>
+    </edge>
+    <edge source="Real Estate" target="Retail">
+      <data key="d11">Real Estate</data>
+      <data key="d12">Retail</data>
+      <data key="d13">Real Estate</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Real Estate</data>
+      <data key="d16">Retail</data>
+      <data key="d17">0.042729276503962826</data>
+      <data key="d18">0.042729276503962826</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.042729276503962826</data>
+    </edge>
+    <edge source="Real Estate" target="Transportation">
+      <data key="d11">Real Estate</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Real Estate</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Real Estate</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.032672507099251076</data>
+      <data key="d18">0.032672507099251076</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.032672507099251076</data>
+    </edge>
+    <edge source="Retail" target="Transportation Equipment">
+      <data key="d11">Retail</data>
+      <data key="d12">Transportation Equipment</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Retail</data>
+      <data key="d16">Transportation Equipment</data>
+      <data key="d17">0.08527058175410103</data>
+      <data key="d18">0.08527058175410103</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.08527058175410103</data>
+    </edge>
+    <edge source="Retail" target="Transportation">
+      <data key="d11">Retail</data>
+      <data key="d12">Transportation</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Retail</data>
+      <data key="d16">Transportation</data>
+      <data key="d17">0.07796440742437137</data>
+      <data key="d18">0.07796440742437137</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.07796440742437137</data>
+    </edge>
+    <edge source="Retail" target="Water and Sanitation">
+      <data key="d11">Retail</data>
+      <data key="d12">Water and Sanitation</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Retail</data>
+      <data key="d16">Water and Sanitation</data>
+      <data key="d17">0.030758102190989078</data>
+      <data key="d18">0.030758102190989078</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.030758102190989078</data>
+    </edge>
+    <edge source="Retail" target="Telecommunications">
+      <data key="d11">Retail</data>
+      <data key="d12">Telecommunications</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Telecommunications</data>
+      <data key="d15">Retail</data>
+      <data key="d16">Telecommunications</data>
+      <data key="d17">0.0213442632869329</data>
+      <data key="d18">0.0213442632869329</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.0213442632869329</data>
+    </edge>
+    <edge source="Retail" target="Textiles">
+      <data key="d11">Retail</data>
+      <data key="d12">Textiles</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Consumer Cyclical</data>
+      <data key="d15">Retail</data>
+      <data key="d16">Textiles</data>
+      <data key="d17">0.08319647644741444</data>
+      <data key="d18">0.08319647644741444</data>
+      <data key="d19">2</data>
+      <data key="d20">True</data>
+      <data key="d21">0.08319647644741444</data>
+    </edge>
+    <edge source="Telecommunications" target="Water and Sanitation">
+      <data key="d11">Telecommunications</data>
+      <data key="d12">Water and Sanitation</data>
+      <data key="d13">Telecommunications</data>
+      <data key="d14">Utilities</data>
+      <data key="d15">Telecommunications</data>
+      <data key="d16">Water and Sanitation</data>
+      <data key="d17">0.030816313485719348</data>
+      <data key="d18">0.030816313485719348</data>
+      <data key="d19">4</data>
+      <data key="d20">False</data>
+      <data key="d21">0.030816313485719348</data>
+    </edge>
+    <edge source="Textiles" target="Transportation Equipment">
+      <data key="d11">Textiles</data>
+      <data key="d12">Transportation Equipment</data>
+      <data key="d13">Consumer Cyclical</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Textiles</data>
+      <data key="d16">Transportation Equipment</data>
+      <data key="d17">0.06365432427508425</data>
+      <data key="d18">0.06365432427508425</data>
+      <data key="d19">2</data>
+      <data key="d20">False</data>
+      <data key="d21">0.06365432427508425</data>
+    </edge>
+    <edge source="Transportation" target="Transportation Equipment">
+      <data key="d11">Transportation</data>
+      <data key="d12">Transportation Equipment</data>
+      <data key="d13">Industrials</data>
+      <data key="d14">Industrials</data>
+      <data key="d15">Transportation</data>
+      <data key="d16">Transportation Equipment</data>
+      <data key="d17">0.04541378535368663</data>
+      <data key="d18">0.04541378535368663</data>
+      <data key="d19">4</data>
+      <data key="d20">True</data>
+      <data key="d21">0.04541378535368663</data>
+    </edge>
+  </graph>
+</graphml>

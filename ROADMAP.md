@@ -127,7 +127,6 @@
 - [x] Create initial macro-sector classification
 - [x] Preserve `Utilities` and `Real Estate` as separate sectors
 - [x] Preserve `subsector` metadata for Basic Materials and other sectors
-- [ ] Compute Spearman correlation matrix
 - [x] Compute within-sector correlations
 - [x] Compute between-sector correlations
 - [x] Run Mann-Whitney U test for within-sector vs between-sector correlations
@@ -136,6 +135,7 @@
 - [x] Generate rolling average market correlation figure
 - [x] Generate dynamic pairwise correlation figure
 - [x] Compute EWMA correlations
+- [ ] Compute Spearman correlation matrix
 
 ---
 
@@ -147,39 +147,63 @@
 - [x] Identify eigenvalues outside the random-matrix noise band
 - [x] Analyze eigenvectors above the noise band
 - [x] Generate top-eigenvector loading figure
-- [ ] Reconstruct market-mode matrix
-- [ ] Reconstruct group/sector-mode matrix
-- [ ] Reconstruct filtered correlation matrix
-- [ ] Compare original and filtered matrices
+- [x] Reconstruct market-mode matrix
+- [x] Reconstruct group/sector-mode matrix
+- [x] Reconstruct filtered correlation matrix
+- [x] Compare original and filtered matrices
 
 ---
 
 ## Phase 8 — Heatmap and dendrogram
 
-- [ ] Compute Mantegna distance matrix
-- [ ] Run hierarchical clustering
-- [ ] Reorder correlation matrix
-- [ ] Generate ordered heatmap
-- [ ] Generate dendrogram
-- [ ] Export vector figure
+- [x] Compute Mantegna distance matrix
+- [x] Run hierarchical clustering
+- [x] Reorder correlation matrix
+- [x] Generate ordered heatmap
+- [x] Generate dendrogram
+- [x] Export vector figure
 
 ---
 
 ## Phase 9 — Financial networks
 
-- [ ] Build MST
-- [ ] Compute centrality metrics
-- [ ] Export MST as GraphML
+- [x] Build MST from original correlation matrix
+- [x] Build MST from Group/Sector Mode matrix
+- [x] Export MST edges, centralities and GraphML files
+- [x] Generate MST comparison figure (Figure 11 / 11B Refined)
+- [x] Build PMFG from original correlation matrix
+- [x] Build PMFG from Group/Sector Mode matrix
+- [x] Build PMFG from Filtered Market+Group matrix
+- [x] Export PMFG edges, centralities, cliques and GraphML files
+- [x] Generate PMFG comparison figure (Figure 12 / 12B Refined)
+- [x] Compare MST and PMFG topology quantitatively (Phase 9.3)
+- [x] Generate network topology comparison table
+- [x] Generate hub-rank comparison table
+- [x] Generate network topology comparison figures (Figure 13 and 14)
+- [x] Build aggregated dependency network at subsector level (Phase 9.4)
+- [x] Export subsector dependency matrix, edges and GraphML
+- [x] Generate subsector dependency network figure (Figure 15)
+- [ ] Community Detection Algorithms (Phase 9.5)
 - [ ] Export MST as GEXF
-- [ ] Build PMFG or TMFG
-- [ ] Detect communities
-- [ ] Compare communities with B3 sectors
 
 ---
 
-## Phase 10 — Dynamic networks
+## Phase 10 — Volatility Forecasting: Econometric Benchmarks vs Machine Learning
 
-- [ ] Define rolling windows
+- [x] Prepare volatility forecasting dataset
+- [x] Create forward realized-volatility targets
+- [x] Implement Historical Volatility baseline
+- [x] Implement EWMA baseline
+- [x] Implement GARCH(1,1) benchmark
+- [x] Implement HAR-RV benchmark
+- [x] Implement Ridge Regression
+- [x] Implement Random Forest
+- [x] Implement XGBoost/LightGBM or HistGradientBoosting
+- [x] Compare classical features vs RMT/network features
+- [x] Evaluate models using MAE, RMSE, QLIKE and out-of-sample R²
+- [x] Generate model-comparison figure
+- [x] Generate realized-vs-predicted volatility figure
+- [x] Generate ML feature-importance figure
 - [ ] Compute dynamic correlation matrices
 - [ ] Compute largest eigenvalue over time
 - [ ] Compute average correlation over time

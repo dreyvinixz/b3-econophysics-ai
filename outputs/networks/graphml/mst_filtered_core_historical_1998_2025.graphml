@@ -1,0 +1,1114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d14" for="edge" attr.name="matrix_type" attr.type="string" />
+  <key id="d13" for="edge" attr.name="same_subsector" attr.type="long" />
+  <key id="d12" for="edge" attr.name="same_sector" attr.type="long" />
+  <key id="d11" for="edge" attr.name="correlation" attr.type="double" />
+  <key id="d10" for="edge" attr.name="distance" attr.type="double" />
+  <key id="d9" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d8" for="node" attr.name="eigenvector_centrality" attr.type="double" />
+  <key id="d7" for="node" attr.name="closeness_centrality" attr.type="double" />
+  <key id="d6" for="node" attr.name="betweenness_centrality" attr.type="double" />
+  <key id="d5" for="node" attr.name="degree_centrality" attr.type="double" />
+  <key id="d4" for="node" attr.name="segment" attr.type="string" />
+  <key id="d3" for="node" attr.name="subsector" attr.type="string" />
+  <key id="d2" for="node" attr.name="sector" attr.type="string" />
+  <key id="d1" for="node" attr.name="company_name" attr.type="string" />
+  <key id="d0" for="node" attr.name="symbol" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="ALPA4">
+      <data key="d0">ALPA4</data>
+      <data key="d1">ALPARGATAS</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">Apparel and Footwear</data>
+      <data key="d4">Footwear</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2033906122638167</data>
+      <data key="d8">0.046865780437269286</data>
+    </node>
+    <node id="BAZA3">
+      <data key="d0">BAZA3</data>
+      <data key="d1">BANCO DA AMAZONIA</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Banks</data>
+      <data key="d4">Banks</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.29993352129760625</data>
+      <data key="d8">0.04203011112334512</data>
+    </node>
+    <node id="BBAS3">
+      <data key="d0">BBAS3</data>
+      <data key="d1">BANCO DO BRASIL</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Banks</data>
+      <data key="d4">Banks</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.3448762470801126</data>
+      <data key="d8">0.025846420954567222</data>
+    </node>
+    <node id="BBDC3">
+      <data key="d0">BBDC3</data>
+      <data key="d1">BRADESCO</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Banks</data>
+      <data key="d4">Banks</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.3533975911717244</data>
+      <data key="d8">0.02324214098697866</data>
+    </node>
+    <node id="BBDC4">
+      <data key="d0">BBDC4</data>
+      <data key="d1">BRADESCO</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Banks</data>
+      <data key="d4">Banks</data>
+      <data key="d5">0.19298245614035087</data>
+      <data key="d6">0.7568922305764411</data>
+      <data key="d7">0.45337174296253535</data>
+      <data key="d8">0.14098485029413696</data>
+    </node>
+    <node id="BEES3">
+      <data key="d0">BEES3</data>
+      <data key="d1">BANESTES</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Banks</data>
+      <data key="d4">Banks</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.29834491085481923</data>
+      <data key="d8">0.042691383238306825</data>
+    </node>
+    <node id="BOBR4">
+      <data key="d0">BOBR4</data>
+      <data key="d1">BOMBRIL</data>
+      <data key="d2">Consumer Non-Cyclical</data>
+      <data key="d3">Personal and Home Care</data>
+      <data key="d4">Home Care</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2386454162246052</data>
+      <data key="d8">0.2077915707593248</data>
+    </node>
+    <node id="BRAP3">
+      <data key="d0">BRAP3</data>
+      <data key="d1">BRADESPAR</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Mining</data>
+      <data key="d4">Holdings</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.23479649976158423</data>
+      <data key="d8">0.0004983411252107026</data>
+    </node>
+    <node id="BRAP4">
+      <data key="d0">BRAP4</data>
+      <data key="d1">BRADESPAR</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Mining</data>
+      <data key="d4">Holdings</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2412137314022933</data>
+      <data key="d8">0.0004232597350765666</data>
+    </node>
+    <node id="BRKM3">
+      <data key="d0">BRKM3</data>
+      <data key="d1">BRASKEM</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Chemicals</data>
+      <data key="d4">Petrochemicals</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24620404545579064</data>
+      <data key="d8">0.004260430648465777</data>
+    </node>
+    <node id="BRKM5">
+      <data key="d0">BRKM5</data>
+      <data key="d1">BRASKEM</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Chemicals</data>
+      <data key="d4">Petrochemicals</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2542596015892137</data>
+      <data key="d8">0.0037412285265401696</data>
+    </node>
+    <node id="CCRO3">
+      <data key="d0">CCRO3</data>
+      <data key="d1">CCR</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Transportation</data>
+      <data key="d4">Infrastructure</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.3234277884616258</data>
+      <data key="d8">0.03300887599658501</data>
+    </node>
+    <node id="CGAS5">
+      <data key="d0">CGAS5</data>
+      <data key="d1">COMGAS</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Gas Utility</data>
+      <data key="d4">Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.23971627551861166</data>
+      <data key="d8">0.20447150814273599</data>
+    </node>
+    <node id="CMIG3">
+      <data key="d0">CMIG3</data>
+      <data key="d1">CEMIG</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.25446980661116864</data>
+      <data key="d8">0.003050246947983536</data>
+    </node>
+    <node id="CMIG4">
+      <data key="d0">CMIG4</data>
+      <data key="d1">CEMIG</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Distribution</data>
+      <data key="d5">0.19298245614035087</data>
+      <data key="d6">0.3226817042606516</data>
+      <data key="d7">0.31803639912127396</data>
+      <data key="d8">0.014695562012784618</data>
+    </node>
+    <node id="COCE5">
+      <data key="d0">COCE5</data>
+      <data key="d1">COELCE</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.23664821410685705</data>
+      <data key="d8">0.004199527810506946</data>
+    </node>
+    <node id="CPFE3">
+      <data key="d0">CPFE3</data>
+      <data key="d1">CPFL ENERGIA</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.25179459810289617</data>
+      <data key="d8">0.0032123884252353014</data>
+    </node>
+    <node id="CPLE3">
+      <data key="d0">CPLE3</data>
+      <data key="d1">COPEL</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2516690960178705</data>
+      <data key="d8">0.003220079619839896</data>
+    </node>
+    <node id="CPLE6">
+      <data key="d0">CPLE6</data>
+      <data key="d1">COPEL</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2573459990820259</data>
+      <data key="d8">0.0028796844996143134</data>
+    </node>
+    <node id="CSNA3">
+      <data key="d0">CSNA3</data>
+      <data key="d1">CSN</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Steel</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.27328296621353676</data>
+      <data key="d8">0.002636613658678228</data>
+    </node>
+    <node id="CTNM4">
+      <data key="d0">CTNM4</data>
+      <data key="d1">COTEMINAS</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">Textiles</data>
+      <data key="d4">Textiles</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24100199913773063</data>
+      <data key="d8">0.2005242644596785</data>
+    </node>
+    <node id="CYRE3">
+      <data key="d0">CYRE3</data>
+      <data key="d1">CYRELA</data>
+      <data key="d2">Real Estate</data>
+      <data key="d3">Real Estate</data>
+      <data key="d4">Construction</data>
+      <data key="d5">0.12280701754385964</data>
+      <data key="d6">0.5162907268170426</data>
+      <data key="d7">0.40370354383973717</data>
+      <data key="d8">0.28202611457408105</data>
+    </node>
+    <node id="ELET3">
+      <data key="d0">ELET3</data>
+      <data key="d1">ELETROBRAS</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Transmission</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2545184813159951</data>
+      <data key="d8">0.0030473283995788086</data>
+    </node>
+    <node id="ELET6">
+      <data key="d0">ELET6</data>
+      <data key="d1">ELETROBRAS</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation and Transmission</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2550615994809109</data>
+      <data key="d8">0.0030148384465669793</data>
+    </node>
+    <node id="EMAE4">
+      <data key="d0">EMAE4</data>
+      <data key="d1">EMAE</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Generation</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2370205621517411</data>
+      <data key="d8">0.21288651840033973</data>
+    </node>
+    <node id="EMBR3">
+      <data key="d0">EMBR3</data>
+      <data key="d1">EMBRAER</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Aerospace and Defense</data>
+      <data key="d4">Aerospace</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.28508059748326026</data>
+      <data key="d8">0.07679718796484528</data>
+    </node>
+    <node id="ETER3">
+      <data key="d0">ETER3</data>
+      <data key="d1">ETERNIT</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Construction Materials</data>
+      <data key="d4">Construction Materials</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2423486572519163</data>
+      <data key="d8">0.19643485523667242</data>
+    </node>
+    <node id="FESA4">
+      <data key="d0">FESA4</data>
+      <data key="d1">FERBASA</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Metallurgy</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.25278569713197896</data>
+      <data key="d8">0.003833752217603421</data>
+    </node>
+    <node id="GGBR3">
+      <data key="d0">GGBR3</data>
+      <data key="d1">GERDAU</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Steel</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.27748593046170833</data>
+      <data key="d8">0.0024129910845079212</data>
+    </node>
+    <node id="GGBR4">
+      <data key="d0">GGBR4</data>
+      <data key="d1">GERDAU</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Steel</data>
+      <data key="d5">0.07017543859649122</data>
+      <data key="d6">0.10338345864661654</data>
+      <data key="d7">0.28514772226902135</data>
+      <data key="d8">0.002507556209167274</data>
+    </node>
+    <node id="GOAU3">
+      <data key="d0">GOAU3</data>
+      <data key="d1">METALURGICA GERDAU</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Holdings</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.27384863515080815</data>
+      <data key="d8">0.002606116971534539</data>
+    </node>
+    <node id="GOAU4">
+      <data key="d0">GOAU4</data>
+      <data key="d1">METALURGICA GERDAU</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Holdings</data>
+      <data key="d5">0.21052631578947367</data>
+      <data key="d6">0.43045112781954886</data>
+      <data key="d7">0.33269790421454765</data>
+      <data key="d8">0.015269056080738204</data>
+    </node>
+    <node id="GRND3">
+      <data key="d0">GRND3</data>
+      <data key="d1">GRENDENE</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">Apparel and Footwear</data>
+      <data key="d4">Footwear</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2887774189765362</data>
+      <data key="d8">0.07345135371108427</data>
+    </node>
+    <node id="GUAR3">
+      <data key="d0">GUAR3</data>
+      <data key="d1">GUARARAPES</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">Retail</data>
+      <data key="d4">Apparel</data>
+      <data key="d5">0.03508771929824561</data>
+      <data key="d6">0.03508771929824561</data>
+      <data key="d7">0.25430105233023104</data>
+      <data key="d8">0.18022538870899535</data>
+    </node>
+    <node id="ITSA3">
+      <data key="d0">ITSA3</data>
+      <data key="d1">ITAUSA</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Financial Services</data>
+      <data key="d4">Holdings</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.31610336511350806</data>
+      <data key="d8">0.03567741420052834</data>
+    </node>
+    <node id="ITSA4">
+      <data key="d0">ITSA4</data>
+      <data key="d1">ITAUSA</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Financial Services</data>
+      <data key="d4">Holdings</data>
+      <data key="d5">0.05263157894736842</data>
+      <data key="d6">0.34523809523809523</data>
+      <data key="d7">0.3895426043528945</data>
+      <data key="d8">0.029436609371600798</data>
+    </node>
+    <node id="KEPL3">
+      <data key="d0">KEPL3</data>
+      <data key="d1">KEPLER WEBER</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Machinery and Equipment</data>
+      <data key="d4">Agricultural</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.23538552460622594</data>
+      <data key="d8">0.2180844006519415</data>
+    </node>
+    <node id="KLBN4">
+      <data key="d0">KLBN4</data>
+      <data key="d1">KLABIN</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Paper and Cellulose</data>
+      <data key="d4">Paper and Cellulose</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2521401507225911</data>
+      <data key="d8">0.0038746167413214357</data>
+    </node>
+    <node id="LREN3">
+      <data key="d0">LREN3</data>
+      <data key="d1">LOJAS RENNER</data>
+      <data key="d2">Consumer Cyclical</data>
+      <data key="d3">Retail</data>
+      <data key="d4">Apparel</data>
+      <data key="d5">0.03508771929824561</data>
+      <data key="d6">0.06892230576441102</data>
+      <data key="d7">0.3029032834493634</data>
+      <data key="d8">0.07463982075905033</data>
+    </node>
+    <node id="MGEL4">
+      <data key="d0">MGEL4</data>
+      <data key="d1">MANGELS</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Metallurgy</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.23620294120105814</data>
+      <data key="d8">0.21547678919639993</data>
+    </node>
+    <node id="PETR3">
+      <data key="d0">PETR3</data>
+      <data key="d1">PETROBRAS</data>
+      <data key="d2">Oil Gas and Biofuels</data>
+      <data key="d3">Oil Gas and Biofuels</data>
+      <data key="d4">Exploration Refining and Distribution</data>
+      <data key="d5">0.03508771929824561</data>
+      <data key="d6">0.39473684210526316</data>
+      <data key="d7">0.38873070722514563</data>
+      <data key="d8">0.0329217787195944</data>
+    </node>
+    <node id="PETR4">
+      <data key="d0">PETR4</data>
+      <data key="d1">PETROBRAS</data>
+      <data key="d2">Oil Gas and Biofuels</data>
+      <data key="d3">Oil Gas and Biofuels</data>
+      <data key="d4">Exploration Refining and Distribution</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.3336088520013773</data>
+      <data key="d8">0.029494204917833177</data>
+    </node>
+    <node id="POMO4">
+      <data key="d0">POMO4</data>
+      <data key="d1">MARCOPOLO</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Transportation Equipment</data>
+      <data key="d4">Commercial Vehicles</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.29119810768394605</data>
+      <data key="d8">0.07130651816455882</data>
+    </node>
+    <node id="PSSA3">
+      <data key="d0">PSSA3</data>
+      <data key="d1">PORTO SEGURO</data>
+      <data key="d2">Financials</data>
+      <data key="d3">Insurance</data>
+      <data key="d4">Insurance</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.3145034022366743</data>
+      <data key="d8">0.03627687650051716</data>
+    </node>
+    <node id="RAPT4">
+      <data key="d0">RAPT4</data>
+      <data key="d1">RANDON</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Transportation Equipment</data>
+      <data key="d4">Auto Parts</data>
+      <data key="d5">0.19298245614035087</data>
+      <data key="d6">0.3508771929824561</data>
+      <data key="d7">0.3312618230352412</data>
+      <data key="d8">0.6713547104742106</data>
+    </node>
+    <node id="RENT3">
+      <data key="d0">RENT3</data>
+      <data key="d1">LOCALIZA</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Transportation</data>
+      <data key="d4">Rent a Car</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.29414009143254066</data>
+      <data key="d8">0.06874731755107302</data>
+    </node>
+    <node id="ROMI3">
+      <data key="d0">ROMI3</data>
+      <data key="d1">INDS ROMI</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Machinery and Equipment</data>
+      <data key="d4">Industrial Machinery</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24496772455098834</data>
+      <data key="d8">0.18861026407069686</data>
+    </node>
+    <node id="SAPR4">
+      <data key="d0">SAPR4</data>
+      <data key="d1">SANEPAR</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Water and Sanitation</data>
+      <data key="d4">Water and Sanitation</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24266108155551885</data>
+      <data key="d8">0.003792899673495244</data>
+    </node>
+    <node id="SBSP3">
+      <data key="d0">SBSP3</data>
+      <data key="d1">SABESP</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Water and Sanitation</data>
+      <data key="d4">Water and Sanitation</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2498902892947709</data>
+      <data key="d8">0.003329921675047008</data>
+    </node>
+    <node id="SCAR3">
+      <data key="d0">SCAR3</data>
+      <data key="d1">SAO CARLOS</data>
+      <data key="d2">Real Estate</data>
+      <data key="d3">Real Estate</data>
+      <data key="d4">Commercial Properties</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.27428941938138424</data>
+      <data key="d8">0.008389438403122553</data>
+    </node>
+    <node id="SHUL4">
+      <data key="d0">SHUL4</data>
+      <data key="d1">SCHULZ</data>
+      <data key="d2">Industrials</data>
+      <data key="d3">Machinery and Equipment</data>
+      <data key="d4">Industrial Machinery</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24359035149361857</data>
+      <data key="d8">0.19270425726283769</data>
+    </node>
+    <node id="TELB3">
+      <data key="d0">TELB3</data>
+      <data key="d1">TELEBRAS</data>
+      <data key="d2">Telecommunications</data>
+      <data key="d3">Telecommunications</data>
+      <data key="d4">Telecommunications</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.1964488025487559</data>
+      <data key="d8">0.003847506904626673</data>
+    </node>
+    <node id="TELB4">
+      <data key="d0">TELB4</data>
+      <data key="d1">TELEBRAS</data>
+      <data key="d2">Telecommunications</data>
+      <data key="d3">Telecommunications</data>
+      <data key="d4">Telecommunications</data>
+      <data key="d5">0.03508771929824561</data>
+      <data key="d6">0.03508771929824561</data>
+      <data key="d7">0.22130194135477183</data>
+      <data key="d8">0.025474921794374612</data>
+    </node>
+    <node id="TRPL4">
+      <data key="d0">TRPL4</data>
+      <data key="d1">ISA CTEEP</data>
+      <data key="d2">Utilities</data>
+      <data key="d3">Electric Utility</data>
+      <data key="d4">Transmission</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24434302011904513</data>
+      <data key="d8">0.0036827383312977337</data>
+    </node>
+    <node id="UNIP6">
+      <data key="d0">UNIP6</data>
+      <data key="d1">UNIPAR</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Chemicals</data>
+      <data key="d4">Chemicals</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2496897454439529</data>
+      <data key="d8">0.004031656161069014</data>
+    </node>
+    <node id="USIM3">
+      <data key="d0">USIM3</data>
+      <data key="d1">USIMINAS</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Steel</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.2694090004116146</data>
+      <data key="d8">0.002848911020077836</data>
+    </node>
+    <node id="USIM5">
+      <data key="d0">USIM5</data>
+      <data key="d1">USIMINAS</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Steel and Metallurgy</data>
+      <data key="d4">Steel</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.274613610564983</data>
+      <data key="d8">0.0025650749904656913</data>
+    </node>
+    <node id="VALE3">
+      <data key="d0">VALE3</data>
+      <data key="d1">VALE</data>
+      <data key="d2">Basic Materials</data>
+      <data key="d3">Mining</data>
+      <data key="d4">Minerals</data>
+      <data key="d5">0.017543859649122806</data>
+      <data key="d6">0.0</data>
+      <data key="d7">0.24104782726546592</data>
+      <data key="d8">0.00042515046806364314</data>
+    </node>
+    <edge source="ALPA4" target="GUAR3">
+      <data key="d9">1.001877489193878</data>
+      <data key="d10">1.001877489193878</data>
+      <data key="d11">0.4981207483232854</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BAZA3" target="BBDC4">
+      <data key="d9">1.1485262621376484</data>
+      <data key="d10">1.1485262621376484</data>
+      <data key="d11">0.3404437125900608</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBAS3" target="BBDC4">
+      <data key="d9">0.7062863374657353</data>
+      <data key="d10">0.7062863374657353</data>
+      <data key="d11">0.7505798047546187</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC3" target="BBDC4">
+      <data key="d9">0.6351210738775293</data>
+      <data key="d10">0.6351210738775293</data>
+      <data key="d11">0.798310610758327</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="ITSA4">
+      <data key="d9">0.643775505904907</data>
+      <data key="d10">0.643775505904907</data>
+      <data key="d11">0.7927765489984405</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="PETR3">
+      <data key="d9">0.8040934364249711</data>
+      <data key="d10">0.8040934364249711</data>
+      <data key="d11">0.6767168727491405</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="PETR4">
+      <data key="d9">0.8059666754053716</data>
+      <data key="d10">0.8059666754053716</data>
+      <data key="d11">0.6752088590680062</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="CYRE3">
+      <data key="d9">0.8593374795225385</data>
+      <data key="d10">0.8593374795225385</data>
+      <data key="d11">0.6307695481439254</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="CCRO3">
+      <data key="d9">0.9020095344136599</data>
+      <data key="d10">0.9020095344136599</data>
+      <data key="d11">0.5931893999134262</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="ITSA3">
+      <data key="d9">0.9749307360672096</data>
+      <data key="d10">0.9749307360672096</data>
+      <data key="d11">0.5247550299357244</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="PSSA3">
+      <data key="d9">0.99131180612144</data>
+      <data key="d10">0.99131180612144</data>
+      <data key="d11">0.5086504515221243</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BBDC4" target="BEES3">
+      <data key="d9">1.1665963640277903</data>
+      <data key="d10">1.1665963640277903</data>
+      <data key="d11">0.3195264617185696</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BOBR4" target="RAPT4">
+      <data key="d9">1.1924777155203725</data>
+      <data key="d10">1.1924777155203725</data>
+      <data key="d11">0.2889984489936568</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BRAP3" target="GGBR4">
+      <data key="d9">0.7654825994356472</data>
+      <data key="d10">0.7654825994356472</data>
+      <data key="d11">0.7070181949806222</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BRAP4" target="GGBR4">
+      <data key="d9">0.6501529692253768</data>
+      <data key="d10">0.6501529692253768</data>
+      <data key="d11">0.7886505583037131</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BRKM3" target="GOAU4">
+      <data key="d9">1.0747980050151391</data>
+      <data key="d10">1.0747980050151391</data>
+      <data key="d11">0.4224046242077384</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="BRKM5" target="GOAU4">
+      <data key="d9">0.9438165501131037</data>
+      <data key="d10">0.9438165501131037</data>
+      <data key="d11">0.5546051598662995</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CGAS5" target="RAPT4">
+      <data key="d9">1.1734244850647442</data>
+      <data key="d10">1.1734244850647442</data>
+      <data key="d11">0.3115374889252699</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG3" target="CMIG4">
+      <data key="d9">0.7994709230130583</data>
+      <data key="d10">0.7994709230130583</data>
+      <data key="d11">0.6804231216283243</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="CPLE6">
+      <data key="d9">0.7547664383092036</data>
+      <data key="d10">0.7547664383092036</data>
+      <data key="d11">0.7151638118010195</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="ELET6">
+      <data key="d9">0.7901903408855301</data>
+      <data key="d10">0.7901903408855301</data>
+      <data key="d11">0.6877996125856048</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="ELET3">
+      <data key="d9">0.7987059703299557</data>
+      <data key="d10">0.7987059703299557</data>
+      <data key="d11">0.681034386479642</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="CPFE3">
+      <data key="d9">0.8419682678797958</data>
+      <data key="d10">0.8419682678797958</data>
+      <data key="d11">0.6455447179417482</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="CPLE3">
+      <data key="d9">0.8439841330062811</data>
+      <data key="d10">0.8439841330062811</data>
+      <data key="d11">0.6438453916168181</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="SBSP3">
+      <data key="d9">0.8727737788151669</data>
+      <data key="d10">0.8727737788151669</data>
+      <data key="d11">0.619132965506347</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="ITSA4">
+      <data key="d9">0.9138697349540166</data>
+      <data key="d10">0.9138697349540166</data>
+      <data key="d11">0.5824210537675377</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="TRPL4">
+      <data key="d9">0.9652471629828385</data>
+      <data key="d10">0.9652471629828385</data>
+      <data key="d11">0.5341489571767908</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="SAPR4">
+      <data key="d9">0.9941204940373036</data>
+      <data key="d10">0.9941204940373036</data>
+      <data key="d11">0.5058622216675137</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CMIG4" target="COCE5">
+      <data key="d9">1.1006978884462173</data>
+      <data key="d10">1.1006978884462173</data>
+      <data key="d11">0.3942320791850194</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CSNA3" target="GOAU4">
+      <data key="d9">0.6651503883447829</data>
+      <data key="d10">0.6651503883447829</data>
+      <data key="d11">0.7787874804423922</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CTNM4" target="RAPT4">
+      <data key="d9">1.1507719774939413</data>
+      <data key="d10">1.1507719774939413</data>
+      <data key="d11">0.3378619279073419</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CYRE3" target="LREN3">
+      <data key="d9">0.9035800281823592</data>
+      <data key="d10">0.9035800281823592</data>
+      <data key="d11">0.5917715663349835</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CYRE3" target="RAPT4">
+      <data key="d9">0.9081356972487685</data>
+      <data key="d10">0.9081356972487685</data>
+      <data key="d11">0.5876447776912466</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CYRE3" target="RENT3">
+      <data key="d9">0.9391517074985557</data>
+      <data key="d10">0.9391517074985557</data>
+      <data key="d11">0.5589970351512736</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CYRE3" target="POMO4">
+      <data key="d9">0.9741127461485506</data>
+      <data key="d10">0.9741127461485506</data>
+      <data key="d11">0.5255521788954647</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CYRE3" target="GRND3">
+      <data key="d9">1.003413176151896</data>
+      <data key="d10">1.003413176151896</data>
+      <data key="d11">0.4965809989623819</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="CYRE3" target="EMBR3">
+      <data key="d9">1.049120355200626</data>
+      <data key="d10">1.049120355200626</data>
+      <data key="d11">0.4496732401518561</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="EMAE4" target="RAPT4">
+      <data key="d9">1.2217166856164718</data>
+      <data key="d10">1.2217166856164718</data>
+      <data key="d11">0.2537041700431515</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="ETER3" target="RAPT4">
+      <data key="d9">1.1273036079625975</data>
+      <data key="d10">1.1273036079625975</data>
+      <data key="d11">0.3645932877372551</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="FESA4" target="GOAU4">
+      <data key="d9">0.9671579178706637</data>
+      <data key="d10">0.9671579178706637</data>
+      <data key="d11">0.5323027809500412</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GGBR3" target="GOAU4">
+      <data key="d9">0.6087361156042682</data>
+      <data key="d10">0.6087361156042682</data>
+      <data key="d11">0.8147201707795135</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GGBR4" target="GOAU4">
+      <data key="d9">0.5713958245364189</data>
+      <data key="d10">0.5713958245364189</data>
+      <data key="d11">0.836753405851173</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GGBR4" target="VALE3">
+      <data key="d9">0.65305725130961</data>
+      <data key="d10">0.65305725130961</data>
+      <data key="d11">0.7867581132559684</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GOAU3" target="GOAU4">
+      <data key="d9">0.6574568518912763</data>
+      <data key="d10">0.6574568518912763</data>
+      <data key="d11">0.7838752439506061</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GOAU4" target="USIM5">
+      <data key="d9">0.6471030067018114</data>
+      <data key="d10">0.6471030067018114</data>
+      <data key="d11">0.7906288493587377</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GOAU4" target="USIM3">
+      <data key="d9">0.7187075987137499</data>
+      <data key="d10">0.7187075987137499</data>
+      <data key="d11">0.7417296937755578</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GOAU4" target="PETR3">
+      <data key="d9">0.881983091056466</data>
+      <data key="d10">0.881983091056466</data>
+      <data key="d11">0.6110529135452408</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GOAU4" target="KLBN4">
+      <data key="d9">0.9774669950959515</data>
+      <data key="d10">0.9774669950959515</data>
+      <data key="d11">0.5222791367490456</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GOAU4" target="UNIP6">
+      <data key="d9">1.0170840359493716</data>
+      <data key="d10">1.0170840359493716</data>
+      <data key="d11">0.4827700319084686</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="GUAR3" target="RAPT4">
+      <data key="d9">0.964341727103078</data>
+      <data key="d10">0.964341727103078</data>
+      <data key="d11">0.5350225166839263</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="ITSA4" target="SCAR3">
+      <data key="d9">1.0979327652458604</data>
+      <data key="d10">1.0979327652458604</data>
+      <data key="d11">0.3972718214997893</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="KEPL3" target="RAPT4">
+      <data key="d9">1.2515463785644754</data>
+      <data key="d10">1.2515463785644754</data>
+      <data key="d11">0.2168158311510735</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="LREN3" target="TELB4">
+      <data key="d9">1.2849587694296125</data>
+      <data key="d10">1.2849587694296125</data>
+      <data key="d11">0.174440480432968</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="MGEL4" target="RAPT4">
+      <data key="d9">1.2365817746582342</data>
+      <data key="d10">1.2365817746582342</data>
+      <data key="d11">0.235432757291546</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="RAPT4" target="ROMI3">
+      <data key="d9">1.0823997142945976</data>
+      <data key="d10">1.0823997142945976</data>
+      <data key="d11">0.4142054292474868</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="RAPT4" target="SHUL4">
+      <data key="d9">1.1058943903841036</data>
+      <data key="d10">1.1058943903841036</data>
+      <data key="d11">0.3884987986584859</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+      <data key="d14">filtered</data>
+    </edge>
+    <edge source="TELB3" target="TELB4">
+      <data key="d9">0.5818800458344193</data>
+      <data key="d10">0.5818800458344193</data>
+      <data key="d11">0.830707806129867</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+      <data key="d14">filtered</data>
+    </edge>
+  </graph>
+</graphml>
