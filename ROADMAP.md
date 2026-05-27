@@ -132,19 +132,25 @@
 - [x] Compute between-sector correlations
 - [x] Run Mann-Whitney U test for within-sector vs between-sector correlations
 - [x] Generate Figure 3 sector correlation distribution
-- [ ] Compute rolling correlations
-- [ ] Compute EWMA correlations
+- [x] Compute rolling correlations
+- [x] Generate rolling average market correlation figure
+- [x] Generate dynamic pairwise correlation figure
+- [x] Compute EWMA correlations
 
 ---
 
 ## Phase 7 — Random Matrix Theory and PCA
 
-- [ ] Compute eigenvalues of correlation matrix
-- [ ] Compute Marcenko-Pastur bounds
-- [ ] Identify market mode
-- [ ] Analyze eigenvectors
-- [ ] Run PCA
-- [ ] Compare PCA factors with market/sector structure
+- [x] Compute eigenvalues of correlation matrix
+- [x] Compute Marcenko-Pastur bounds
+- [x] Identify market mode
+- [x] Identify eigenvalues outside the random-matrix noise band
+- [x] Analyze eigenvectors above the noise band
+- [x] Generate top-eigenvector loading figure
+- [ ] Reconstruct market-mode matrix
+- [ ] Reconstruct group/sector-mode matrix
+- [ ] Reconstruct filtered correlation matrix
+- [ ] Compare original and filtered matrices
 
 ---
 
