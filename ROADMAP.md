@@ -70,22 +70,34 @@
 
 - [x] Load adjusted daily prices from ClickHouse
 - [x] Compute log returns using `adj_close`
-- [ ] Validate extreme returns
 - [x] Create long returns DataFrame
 - [x] Create wide returns matrix
 - [x] Generate summary statistics by asset
+- [x] Validate extreme returns
+- [!] Investigate extreme adjusted-return events in modern universe
+
+---
+
+## Phase 4.1 — Return quality control
+
+- [ ] Create extreme-return flags
+- [ ] Inspect `abs(log_return) > 0.50`
+- [ ] Inspect `abs(log_return) > 1.00`
+- [ ] Investigate KLBN11 December 2013 adjustment sequence
+- [ ] Decide treatment for extreme corporate-action-like returns
+- [ ] Define modern analysis window, likely 2018-2025
 
 ---
 
 ## Phase 5 — Stylized facts
 
-- [ ] Generate normalized price plot
-- [ ] Generate daily returns plot
-- [ ] Generate CCDF of absolute returns
-- [ ] Generate ACF of absolute returns
-- [ ] Export Figure 1 as PDF
-- [ ] Export Figure 1 as SVG
-- [ ] Export Figure 1 preview as PNG
+- [x] Generate normalized price plot
+- [x] Generate daily returns plot
+- [x] Generate CCDF of absolute returns
+- [x] Generate ACF of absolute returns
+- [x] Export Figure 1 as PDF
+- [x] Export Figure 1 as SVG
+- [x] Export Figure 1 preview as PNG
 
 ---
 
