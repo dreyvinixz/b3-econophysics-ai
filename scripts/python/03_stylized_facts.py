@@ -41,6 +41,7 @@ def configure_matplotlib() -> None:
         {
             "figure.dpi": 140,
             "savefig.dpi": 300,
+            "text.usetex": True,
             "font.family": "serif",
             "mathtext.fontset": "cm",
             "font.size": 9,
@@ -143,7 +144,7 @@ def plot_stylized_facts(returns_long: pd.DataFrame, returns_wide: pd.DataFrame) 
             linewidth=0.8,
         )
     ax.set_title("normalized price")
-    ax.set_ylabel(r"$P_t / P_0$")
+    ax.set_ylabel(r"$P_t/P_0$")
     ax.legend(loc="upper left", ncols=3, handlelength=2.0, columnspacing=1.3)
 
     ax = axes[0, 1]
@@ -158,8 +159,8 @@ def plot_stylized_facts(returns_long: pd.DataFrame, returns_wide: pd.DataFrame) 
         )
         ax.axhline(RETURN_OFFSETS[symbol], color="black", linewidth=0.3, alpha=0.3)
     ax.set_title("returns")
-    ax.set_ylabel(r"$r_t$ + offset")
-    ax.legend(loc="upper left", handlelength=2.0)
+    ax.set_ylabel(r"$r_t + \mathrm{offset}$")
+    ax.legend(loc="upper left", ncols=3, handlelength=2.0, columnspacing=1.3)
 
     ax = axes[1, 0]
     for symbol in returns_wide.columns:
@@ -178,8 +179,8 @@ def plot_stylized_facts(returns_long: pd.DataFrame, returns_wide: pd.DataFrame) 
     if len(ref_x):
         ax.loglog(ref_x, ref_y, color="black", linewidth=0.8, linestyle="--", label=rf"$x^{{-{alpha:.2f}}}$")
     ax.set_title("complementary CDF of returns")
-    ax.set_xlabel("|log return|")
-    ax.set_ylabel("P(|r| > x)")
+    ax.set_xlabel(r"$|r_t|$")
+    ax.set_ylabel(r"$P(|r_t| > x)$")
     ax.legend(loc="lower left", handlelength=2.0)
 
     ax = axes[1, 1]
@@ -199,12 +200,12 @@ def plot_stylized_facts(returns_long: pd.DataFrame, returns_wide: pd.DataFrame) 
         )
 
     all_acf = np.nanmean(np.vstack(acf_by_asset), axis=0)
-    ax.plot(lags, all_acf, label="all", color="black", linewidth=1.2)
+    ax.plot(lags, all_acf, label="all", color="0.25", linewidth=1.0, alpha=0.9)
     ax.axhline(0.0, color="black", linewidth=0.6)
     ax.set_xlim(0, max_lag)
     ax.set_title("autocorrelations")
     ax.set_xlabel("lag, trading days")
-    ax.set_ylabel(r"ACF$(|r|)$")
+    ax.set_ylabel(r"$\mathrm{ACF}(|r_t|)$")
     ax.legend(loc="upper right", handlelength=2.0)
 
     return fig
