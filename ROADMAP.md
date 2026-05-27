@@ -113,8 +113,10 @@
 - [x] Export Figure 1A, 2006-2021 comparison window
 - [x] Export Figure 1B, 1998-2025 full Brazilian window
 - [x] Export Figure 1C, journal-style 2006-2021 main candidate
+- [x] Export Figure 1D, clean 2006-2021 main candidate
 - [x] Visually inspect Figure 1 PNG
 - [x] Visually inspect Figure 1C journal-style PNG
+- [x] Visually inspect Figure 1D clean PNG
 - [x] Commit and push Figure 1 artifacts
 
 ---
