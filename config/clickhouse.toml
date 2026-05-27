@@ -1,0 +1,9 @@
+[clickhouse]
+host = "localhost"
+port = 8123
+username = "default"
+password = "generate-a-new-local-clickhouse-password"
+database = "quantbase"
+
+[tables]
+daily = "quantbase.candles_1d"

@@ -1,0 +1,149 @@
+demo_assets:
+  description: "Assets used for the first stylized-facts figure."
+  symbols:
+    - PETR4
+    - VALE3
+    - BBDC4
+
+core_historical:
+  description: "Brazilian stocks/units with at least 5000 valid daily observations from 1998-03-16 to 2025-12-31."
+  filters:
+    start_date: "1998-03-16"
+    end_date: "2025-12-31"
+    min_days: 5000
+    cod_bdi: "02"
+    exclude_specification_contains:
+      - "DR"
+    price_column: "adj_close"
+  symbols:
+    - PETR4
+    - VALE3
+    - BBDC4
+    - BBAS3
+    - PETR3
+    - RENT3
+    - LREN3
+    - GGBR4
+    - ITSA4
+    - USIM5
+    - CSNA3
+    - ELET3
+    - CYRE3
+    - SBSP3
+    - CCRO3
+    - CMIG4
+    - EMBR3
+    - BRAP4
+    - BRKM5
+    - GOAU4
+    - BBDC3
+    - ELET6
+    - CPLE6
+    - CPFE3
+    - PSSA3
+    - TRPL4
+    - ALPA4
+    - POMO4
+    - RAPT4
+    - CPLE3
+    - TELB4
+    - KLBN4
+    - GRND3
+    - USIM3
+    - GUAR3
+    - SAPR4
+    - UNIP6
+    - KEPL3
+    - CMIG3
+    - FESA4
+    - ROMI3
+    - ITSA3
+    - GGBR3
+    - CGAS5
+    - COCE5
+    - SHUL4
+    - BRAP3
+    - ETER3
+    - SCAR3
+    - TELB3
+    - CTNM4
+    - GOAU3
+    - BEES3
+    - BOBR4
+    - BRKM3
+    - BAZA3
+    - EMAE4
+    - MGEL4
+
+modern_liquid_top_50:
+  description: "Top 50 most liquid Brazilian stocks/units after excluding BDRs and non-equity instruments."
+  filters:
+    start_date: "1998-03-16"
+    end_date: "2025-12-31"
+    min_days: 1000
+    cod_bdi: "02"
+    exclude_specification_contains:
+      - "DR"
+    price_column: "adj_close"
+  symbols:
+    - PETR4
+    - ITUB4
+    - VALE3
+    - B3SA3
+    - ABEV3
+    - SUZB3
+    - BBDC4
+    - MGLU3
+    - NTCO3
+    - BPAC11
+    - PRIO3
+    - BBAS3
+    - HAPV3
+    - PETR3
+    - VBBR3
+    - RAIL3
+    - RDOR3
+    - ASAI3
+    - AZUL4
+    - BRFS3
+    - JBSS3
+    - RENT3
+    - BBSE3
+    - COGN3
+    - LREN3
+    - GGBR4
+    - CIEL3
+    - IRBR3
+    - ITSA4
+    - WEGE3
+    - TIMS3
+    - RADL3
+    - EQTL3
+    - UGPA3
+    - USIM5
+    - KLBN11
+    - CSNA3
+    - ELET3
+    - CRFB3
+    - LWSA3
+    - YDUQ3
+    - CSAN3
+    - PETZ3
+    - HYPE3
+    - CYRE3
+    - PCAR3
+    - SBSP3
+    - CCRO3
+    - ENEV3
+    - CMIG4
+
+benchmark_assets:
+  description: "Indices and ETFs used only as benchmarks, not as nodes in the main equity network."
+  symbols:
+    - BOVA11
+    - SMAL11
+    - IVVB11
+
+market_factor:
+  description: "Main Brazilian market proxy used for partial correlations and factor adjustment."
+  symbol: BOVA11

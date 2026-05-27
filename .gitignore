@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+outputs/figures/preview/
+outputs/tables/*.csv
+outputs/tables/*.xlsx
+
+.DS_Store
+Thumbs.db

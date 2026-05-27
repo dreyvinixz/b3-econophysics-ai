@@ -1,0 +1,82 @@
+(.venv) PS C:\quantbase-services\services\b3-econophysics-ai> docker exec -it quantbase-clickhouse-dev clickhouse-client --query "SELECT
+    symbol,
+    any(company_name) AS company_name,
+    any(tipo_mercado) AS tipo_mercado,
+    any(cod_bdi) AS cod_bdi,
+    any(specification) AS specification,
+    min(date) AS first_date,
+    max(date) AS last_date,
+    count() AS n_days,
+    round(avg(financial_volume), 2) AS avg_financial_volume
+FROM (
+    SELECT symbol, company_name, tipo_mercado, cod_bdi, specification, date, financial_volume
+    FROM quantbase.candles_1d
+    WHERE date BETWEEN '1998-03-16' AND '2025-12-31'
+      AND adj_close > 0
+      AND cod_bdi = '02'
+      AND specification NOT LIKE '%DR%'
+)
+GROUP BY symbol
+HAVING n_days >= 5000
+ORDER BY avg_financial_volume DESC
+LIMIT 100;" --format PrettyCompact
+    ┌─symbol─┬─company_name─┬─tipo_mercado─┬─cod_bdi─┬─specification─┬─first_date─┬──last_date─┬─n_days─┬─avg_financial_volume─┐
+ 1. │ PETR4  │ PETROBRAS    │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-12-30 │   6838 │         748331124.81 │ -- 748.33 million
+ 2. │ VALE3  │ VALE R DOCE  │ 010          │ 02      │ ON            │ 1998-03-16 │ 2025-12-30 │   6858 │         556465884.36 │ -- 556.47 million
+ 3. │ BBDC4  │ BRADESCO     │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-12-30 │   6887 │         298053005.44 │ -- 298.05 million
+ 4. │ BBAS3  │ BRASIL       │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   6868 │         219435495.03 │ -- 219.44 million
+ 5. │ PETR3  │ PETROBRAS    │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   6834 │         197975329.93 │ -- 197.98 million
+ 6. │ RENT3  │ LOCALIZA     │ 010          │ 02      │ ON      NM    │ 2005-05-23 │ 2025-12-30 │   5107 │         142922352.82 │ -- 142.92 million
+ 7. │ LREN3  │ LOJAS RENNER │ 010          │ 02      │ ON *          │ 1998-06-09 │ 2025-12-30 │   5093 │         139808769.13 │ -- 139.81 million
+ 8. │ GGBR4  │ GERDAU       │ 010          │ 02      │ PN *          │ 2001-02-01 │ 2025-12-30 │   6175 │         136469956.55 │ -- 136.47 million
+ 9. │ ITSA4  │ ITAUSA       │ 010          │ 02      │ PN            │ 1998-03-16 │ 2025-12-30 │   6886 │         124357041.51 │ -- 124.36 million
+10. │ USIM5  │ USIMINAS     │ 010          │ 02      │ PNA           │ 1999-02-02 │ 2025-12-30 │   6670 │          95268904.34 │ -- 95.27 million
+11. │ CSNA3  │ SID NACIONAL │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   6883 │          90736900.94 │ -- 90.74 million
+12. │ ELET3  │ ELETROBRAS   │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-11-07 │   6821 │          88426517.23 │ -- 88.43 million
+13. │ CYRE3  │ CYRELA REALT │ 010          │ 02      │ ON  ED  NM    │ 2005-07-01 │ 2025-12-30 │   5065 │          71976864.43 │ -- 71.98 million
+14. │ SBSP3  │ SABESP       │ 010          │ 02      │ ON *I97       │ 1998-03-16 │ 2025-12-30 │   6887 │          69491940.85 │ -- 69.49 million
+15. │ CCRO3  │ CCR SA       │ 010          │ 02      │ ON      NM    │ 2002-02-01 │ 2025-04-30 │   5666 │          67439012.56 │ -- 67.44 million
+16. │ CMIG4  │ CEMIG        │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-12-30 │   6886 │          66468940.68 │ -- 66.47 million
+17. │ EMBR3  │ EMBRAER      │ 010          │ 02      │ ON *          │ 1998-06-22 │ 2025-10-31 │   6693 │          65580414.15 │ -- 65.58 million
+18. │ BRAP4  │ BRADESPAR    │ 010          │ 02      │ PN *          │ 2000-08-10 │ 2025-12-30 │   6292 │          48918885.53 │ -- 48.92 million
+19. │ BRKM5  │ BRASKEM      │ 010          │ 02      │ PNA     N1    │ 2002-09-02 │ 2025-12-30 │   5750 │          48330993.33 │ -- 48.33 million
+20. │ GOAU4  │ GERDAU MET   │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-12-30 │   6886 │          44086774.07 │ -- 44.09 million
+21. │ BBDC3  │ BRADESCO     │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   6886 │          42507481.84 │ -- 42.51 million
+22. │ ELET6  │ ELETROBRAS   │ 010          │ 02      │ PNB*          │ 1998-03-16 │ 2025-11-07 │   6820 │          41590732.91 │ -- 41.59 million
+23. │ CPLE6  │ COPEL        │ 010          │ 02      │ PNB*EJ        │ 1998-03-16 │ 2025-11-07 │   6853 │          37835476.39 │ -- 37.84 million
+24. │ CPFE3  │ CPFL ENERGIA │ 010          │ 02      │ ON  ED  NM    │ 2004-09-29 │ 2025-12-30 │   5265 │          37321251.26 │ -- 37.32 million
+25. │ PSSA3  │ PORTO SEGURO │ 010          │ 02      │ ON      NM    │ 2004-11-22 │ 2025-12-30 │   5230 │          28037804.81 │ -- 28.04 million
+26. │ TRPL4  │ TRAN PAULIST │ 010          │ 02      │ PN *          │ 1999-07-26 │ 2024-11-14 │   6275 │          18430722.33 │ -- 18.43 million
+27. │ ALPA4  │ ALPARGATAS   │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-12-30 │   6283 │          17512923.43 │ -- 17.51 million
+28. │ POMO4  │ MARCOPOLO    │ 010          │ 02      │ PN  EJ  N2    │ 2001-12-03 │ 2025-12-30 │   5953 │          16069081.36 │ -- 16.07 million
+29. │ RAPT4  │ RANDON PART  │ 010          │ 02      │ PN  ED  N1    │ 2001-06-26 │ 2025-12-30 │   6006 │          12996066.19 │ -- 13.00 million
+30. │ CPLE3  │ COPEL        │ 010          │ 02      │ ON *EJ        │ 1998-03-16 │ 2025-12-30 │   6788 │           8383500.21 │ -- 8.38 million
+31. │ TELB4  │ TELEBRAS     │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-12-30 │   6853 │            8105104.9 │ -- 8.11 million
+32. │ KLBN4  │ KLABIN S/A   │ 010          │ 02      │ PN      N2    │ 2002-01-02 │ 2025-12-30 │   5950 │            8046600.2 │ -- 8.05 million
+33. │ GRND3  │ GRENDENE     │ 010          │ 02      │ ON  EDJ NM    │ 2004-10-29 │ 2025-12-30 │   5244 │              7131655 │ -- 7.13 million
+34. │ USIM3  │ USIMINAS     │ 010          │ 02      │ ON            │ 1998-03-25 │ 2025-12-30 │   6006 │            7104637.5 │ -- 7.10 million
+35. │ GUAR3  │ GUARARAPES   │ 010          │ 02      │ ON      NM    │ 2001-12-04 │ 2025-12-30 │   5560 │           6265159.81 │ -- 6.27 million
+36. │ SAPR4  │ SANEPAR      │ 010          │ 02      │ PN      N2    │ 2002-05-03 │ 2025-12-30 │   5779 │           5701940.04 │ -- 5.70 million
+37. │ UNIP6  │ UNIPAR       │ 010          │ 02      │ PNB           │ 1998-03-16 │ 2025-12-30 │   6880 │            5338612.3 │ -- 5.34 million
+38. │ KEPL3  │ KEPLER WEBER │ 010          │ 02      │ ON      NM    │ 2002-09-09 │ 2025-12-30 │   5198 │           4782770.83 │ -- 4.78 million
+39. │ CMIG3  │ CEMIG        │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   6881 │           4587511.94 │ -- 4.59 million
+40. │ FESA4  │ FERBASA      │ 010          │ 02      │ PN *          │ 1998-03-23 │ 2025-12-30 │   6432 │           3476343.32 │ -- 3.48 million
+41. │ ROMI3  │ INDS ROMI    │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   5313 │           3174166.56 │ -- 3.17 million
+42. │ ITSA3  │ ITAUSA       │ 010          │ 02      │ ON            │ 1998-03-17 │ 2025-12-30 │   5711 │           2552426.93 │ -- 2.55 million
+43. │ GGBR3  │ GERDAU       │ 010          │ 02      │ ON *          │ 2001-02-05 │ 2025-12-30 │   5683 │            2508850.1 │ -- 2.51 million
+44. │ CGAS5  │ COMGAS       │ 010          │ 02      │ PNA           │ 2001-06-04 │ 2025-12-30 │   6016 │           2372291.65 │ -- 2.37 million
+45. │ COCE5  │ COELCE       │ 010          │ 02      │ PNA*          │ 1998-03-16 │ 2025-12-30 │   6726 │           1231495.97 │ -- 1.23 million
+46. │ SHUL4  │ SCHULZ       │ 010          │ 02      │ PN *          │ 1998-03-19 │ 2025-12-30 │   5042 │           1013452.39 │ -- 1.01 million
+47. │ BRAP3  │ BRADESPAR    │ 010          │ 02      │ ON *          │ 2000-08-10 │ 2025-12-30 │   6211 │               989896 │
+48. │ ETER3  │ ETERNIT      │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   5117 │            948659.63 │
+49. │ SCAR3  │ SAO CARLOS   │ 010          │ 02      │ ON *          │ 1999-09-20 │ 2025-12-30 │   5450 │             726320.7 │
+50. │ TELB3  │ TELEBRAS     │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   5387 │            719947.92 │
+51. │ CTNM4  │ COTEMINAS    │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2024-05-08 │   5983 │             605199.8 │
+52. │ GOAU3  │ GERDAU MET   │ 010          │ 02      │ ON *          │ 1998-03-17 │ 2025-12-30 │   5853 │            579479.78 │
+53. │ BEES3  │ BANESTES     │ 010          │ 02      │ ON *          │ 1998-03-23 │ 2025-12-30 │   5149 │            374265.24 │
+54. │ BOBR4  │ BOMBRIL      │ 010          │ 02      │ PN *          │ 1998-03-16 │ 2025-02-11 │   5948 │            371010.99 │
+55. │ BRKM3  │ BRASKEM      │ 010          │ 02      │ ON      N1    │ 2002-11-28 │ 2025-12-30 │   5022 │            305696.16 │
+56. │ BAZA3  │ AMAZONIA     │ 010          │ 02      │ ON *          │ 1998-03-16 │ 2025-12-30 │   5898 │            219371.53 │
+57. │ EMAE4  │ EMAE         │ 010          │ 02      │ PN *          │ 1998-03-31 │ 2025-12-30 │   6174 │            181639.52 │
+58. │ MGEL4  │ MANGELS INDL │ 010          │ 02      │ PN *          │ 1998-03-17 │ 2025-12-30 │   5040 │            106242.02 │
+    └─symbol─┴─company_name─┴─tipo_mercado─┴─cod_bdi─┴─specification─┴─first_date─┴──last_date─┴─n_days─┴─avg_financial_volume─┘
