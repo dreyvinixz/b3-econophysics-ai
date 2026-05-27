@@ -103,9 +103,15 @@
 - [x] Generate daily returns plot
 - [x] Generate CCDF of absolute returns
 - [x] Generate ACF of absolute returns
+- [x] Add journal-style return offsets
+- [x] Extend absolute-return ACF to 300 lags
+- [x] Add pooled/all ACF curve
+- [x] Add power-law reference line for CCDF tail
 - [x] Export Figure 1 as PDF
 - [x] Export Figure 1 as SVG
 - [x] Export Figure 1 preview as PNG
+- [x] Export Figure 1A, 2006-2021 comparison window
+- [x] Export Figure 1B, 1998-2025 full Brazilian window
 - [x] Visually inspect Figure 1 PNG
 - [x] Commit and push Figure 1 artifacts
 
